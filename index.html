@@ -13,6 +13,9 @@
     <!-- 애니메이트 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <!-- aos CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
@@ -134,6 +137,36 @@
       </div>
     </section>
 
+    <section class="company__overview">
+      <div class="inner">
+        <div class="overview__left" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
+          <div>
+            <h2 class="overview__title">20년 역사의 <span class="--strong">와클 글로벌</span></h2>
+            <p class="overview__desc">WACLE은 끊임없는 연구, 개발투자로 처리수 재활용장치등의 <br>
+              모델을 50여가지 개발, 공급하며, 매년 매출신장을 보이고 있는 신 벤처기업입니다.
+              </p>
+          </div>
+          <div class="company__record">
+            <div class="index-1">
+              <h2>20k</h2>
+              <p>최고 투자율p>
+            </div>
+            <div class="index-2">
+              <h2>13만명</h2>
+              <p>15% 감소</p>
+            </div>
+            <div class="index-3">
+              <h2>멸균율</h2>
+              <p>35명</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview__right" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
+          <video src="./img/company__overview_video.mp4 " muted autoplay playsinline loop></video>
+        </div>
+      </div> 
+    </section>
+
     <!-- 회사 소개 -->
     <section class="company__introduce">
       <div class="inner">
@@ -147,19 +180,18 @@
           </a>
         </div>
         <div class="company__info">
-          <div class="con__box">
+          <div class="con__box" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
             <div class="content">
               <h2>CEO 인사말</h2>
               <div class="content__desc">
-                <p>[회사명]의 CEO [이름]입니다. 저희 회사는 고객의 만족을 최우선으로</p>
-                <p>생각하며 최고의 품질을 제공하기 위해 항상 노력하고 있습니다.</p>
-                <p>여러분의 지속적인 관심과 성원 부탁드립니다. 감사합니다.</p>
+                <p>최고의 품질을 제공하기 위해 항상 노력합니다.</p>
+                <p>여러분의 지속적인 관심과 성원 부탁드립니다.</p>
               </div>
               <a href="#" class="read__more">+ read more</a>
             </div>
             <div class="black--bg"></div>
           </div>
-          <div class="con__box">
+          <div class="con__box" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
             <div class="content">
               <h2>오시는 길</h2>
               <div class="content__desc">
@@ -171,7 +203,7 @@
             </div>
             <div class="black--bg"></div>
           </div>
-          <div class="con__box">
+          <div class="con__box" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
             <div class="content">
               <h2>연혁</h2>
               <div class="content__desc">
@@ -193,56 +225,70 @@
         <h2 class="section__title">PRODUCT INFO</h2>
         <p class="product_sec__desc">건강한 물을 위해 새로운 기술에 늘 최선을 다하고 있습니다.</p>
 
-        <div class="product__wrap">
+        <div class="product__wrap" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
           <div class="swiper productSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>수중 원소식 기계1</h2>
-                  <p>최신 원료의 기술로 만들어집니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>수중 원소식 기계1</h2>
+                    <p>최신 원료의 기술 제작</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>재활용 연소식 기계 2</h2>
-                  <p>배기가스를 전혀 배출하지 않습니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>재활용 연소식 기계 2</h2>
+                    <p>OO기술 탑재 연료</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>수중 원소식 기계1</h2>
-                  <p>최신 원료의 기술로 만들어집니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>수중 원소식 기계1</h2>
+                    <p>최신 원료의 기술 제작</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>수중 원소식 기계1</h2>
-                  <p>최신 원료의 기술로 만들어집니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>수중 원소식 기계1</h2>
+                    <p>최신 원료의 기술 제작</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>수중 원소식 기계1</h2>
-                  <p>최신 원료의 기술로 만들어집니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>수중 원소식 기계1</h2>
+                    <p>최신 원료의 기술 제작</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>수중 원소식 기계1</h2>
-                  <p>최신 원료의 기술로 만들어집니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>수중 원소식 기계1</h2>
+                    <p>최신 원료의 기술 제작</p>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                <div class="product__sub">
-                  <h2>수중 원소식 기계1</h2>
-                  <p>최신 원료의 기술로 만들어집니다.</p>
+                <div class="swiper__content">
+                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                  <div class="product__sub">
+                    <h2>수중 원소식 기계1</h2>
+                    <p>최신 원료의 기술 제작</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -256,7 +302,7 @@
       </div>
     </section>
     <!-- 고객 지원 -->
-    <section class="customer__cs">
+    <section class="customer__cs" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
       <div class="customer__text">
         <h2>다양하고 골치아픈 민원들을 
           <br>
@@ -289,18 +335,37 @@
      </footer>
   </div>
 
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- AOS INIT -->
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".productSwiper", {
-      slidesPerView: 4,
+      slidesPerView: 1,
       // spaceBetween: 30,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      breakpoints : {
+        767: {
+          slidesPerView : 3,
+        },
+
+        1024: {
+          slidesPerView : 4,
+        }
       },
     });
   </script>

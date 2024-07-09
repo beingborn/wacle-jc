@@ -1,3 +1,71 @@
+
+.company__overview {
+  position: relative;
+  width: calc(100% - 120px);
+  margin: 0px auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .overview__title {
+    font-size: 42px;
+    margin-bottom: 60px;
+
+    .--strong {
+      color: #0051A2;
+    }
+  }
+
+  .overview__desc {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .company__record {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    max-width: 600px;
+
+    .index-1, .index-2, .index-3 {
+      text-align: center;
+
+     h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 12px;
+     }
+
+     p {
+      font-size: 15px;
+      font-weight: 400;
+     }
+    }
+  }
+
+  .overview__left {
+    width: 50%;
+  }
+
+  .overview__right {
+    background-color: gray;
+    width: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 .company__introduce {
   position: relative;
   width: calc(100% - 120px);
@@ -6,6 +74,7 @@
   padding-bottom: 140px;
 
   .section__top {display:flex; align-items: center; justify-content: space-between;}
+  
 
   .company__info {
     margin-top: 72px;
@@ -15,6 +84,8 @@
     .con__box {
       height: 356px;
       position: relative;
+      border-radius: 8px;
+      overflow: hidden;
       // background-color: #F6F6F6;
       background-size: cover;
       position: relative;
@@ -27,7 +98,7 @@
         width: 100%;
         height: 100%;
         background-color: #000;
-        opacity: 0.3;
+        opacity: 0.6;
         z-index: 5;
       }
 
@@ -56,6 +127,7 @@
             font-size: 20px;
             margin-bottom: 12px;
             color: #fff;
+            padding-right: 20px;
 
           }
         }
@@ -65,8 +137,12 @@
         position: absolute;
         left: 28px;
         bottom: 46px;
-        color: #969696;
+        color: #fff;
         font-weight: 700;
+
+        &:hover {
+          color: #0051A2;
+        }
       }
 
     }
@@ -108,6 +184,8 @@
     font-size: 30px;
     color: #cccccc;
     font-weight: bold;
+
+
   }
 
   .product__wrap {
@@ -149,6 +227,11 @@
       color: #fff;
       font-weight: bold;
       line-height: 1.5;
+      // word-break: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; // 원하는 라인수
+      -webkit-box-orient: vertical;
+      white-space: nowrap;
     }
 
     .apply__btn {

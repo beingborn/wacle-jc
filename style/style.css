@@ -85,12 +85,14 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 8px;
+  white-space: nowrap;
 }
 .main__hero .main__text .company__promise {
   margin-top: 32px;
 }
 .main__hero .main__text .company__promise p {
   font-size: 18px;
+  white-space: nowrap;
 }
 .main__hero .main__text .company__promise p:nth-child(1) {
   margin-bottom: 8px;
@@ -104,6 +106,62 @@
   margin-right: 20px;
   position: relative;
   z-index: 33;
+}
+
+.company__overview {
+  position: relative;
+  width: calc(100% - 120px);
+  margin: 0px auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.company__overview .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.company__overview .overview__title {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+.company__overview .overview__title .--strong {
+  color: #0051A2;
+}
+.company__overview .overview__desc {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.company__overview .company__record {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+  max-width: 600px;
+}
+.company__overview .company__record .index-1, .company__overview .company__record .index-2, .company__overview .company__record .index-3 {
+  text-align: center;
+}
+.company__overview .company__record .index-1 h2, .company__overview .company__record .index-2 h2, .company__overview .company__record .index-3 h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.company__overview .company__record .index-1 p, .company__overview .company__record .index-2 p, .company__overview .company__record .index-3 p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.company__overview .overview__left {
+  width: 50%;
+}
+.company__overview .overview__right {
+  background-color: gray;
+  width: 40%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.company__overview .overview__right video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .company__introduce {
@@ -126,6 +184,8 @@
 .company__introduce .company__info .con__box {
   height: 356px;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
   background-size: cover;
   position: relative;
   z-index: 4;
@@ -137,7 +197,7 @@
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: 5;
 }
 .company__introduce .company__info .con__box .content {
@@ -163,13 +223,17 @@
   font-size: 20px;
   margin-bottom: 12px;
   color: #fff;
+  padding-right: 20px;
 }
 .company__introduce .company__info .con__box .read__more {
   position: absolute;
   left: 28px;
   bottom: 46px;
-  color: #969696;
+  color: #fff;
   font-weight: 700;
+}
+.company__introduce .company__info .con__box .read__more:hover {
+  color: #0051A2;
 }
 .company__introduce .company__info .con__box:nth-child(1) {
   width: calc(40% - 20px);
@@ -238,6 +302,10 @@
   color: #fff;
   font-weight: bold;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
 }
 .customer__cs .customer__text .apply__btn {
   margin-top: 28px;
@@ -284,10 +352,11 @@
 }
 .product__wrap .swiper-slide img {
   display: block;
-  height: auto;
+  min-height: 200px;
   width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0px auto;
 }
 .product__wrap .btn__group {
   display: flex;
@@ -351,18 +420,73 @@
   font-style: normal;
 }
 
-/* PC (해상도 1024px)*/
+/* PC 소형 to 노트북 (해상도 1024px ~ 1440px)*/
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .company__introduce .company__info .con__box .content .content__desc p {
+    font-size: 16px;
+  }
+}
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .company__overview .overview__title {
+    font-size: 32px;
+  }
+  .company__overview .overview__desc {
+    font-size: 15px;
+  }
+  .company__overview .company__record .index-1 h2, .company__overview .company__record .index-2 h2, .company__overview .company__record .index-3 h2 {
+    font-size: 20px;
+  }
   .main__hero .main__text .company__slogan {
     font-size: 5.5vw;
   }
   .main__hero .main__text .company__desc {
     font-size: 20px;
   }
+  .company__introduce .company__info .con__box .content .content__desc p {
+    font-size: 16px;
+  }
+  .product__wrap .swiper-slide .product__sub {
+    font-size: 13px;
+  }
+  .product__wrap .swiper-slide .product__sub h2 {
+    font-size: 18px;
+  }
+  .product__info .product_sec__desc {
+    font-size: 20px;
+  }
+  .product__wrap .btn__group {
+    top: -140px;
+  }
+  .customer__cs .customer__text h2 {
+    font-size: 24px;
+  }
+  .footer__bottom {
+    align-items: end;
+  }
+  .footer__bottom .footer__slogan {
+    font-size: 24px;
+  }
 }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width: 767px) {
+  .company__overview .inner {
+    display: block;
+  }
+  .company__overview {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .company__overview .inner .overview__left, .company__overview .inner .overview__right {
+    width: 100%;
+  }
+  .company__overview .inner .overview__right {
+    margin-top: 40px;
+  }
+  .company__introduce, .product__info {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
   .main__hero .main__text .company__slogan {
     font-size: 7.7vw;
   }
@@ -382,7 +506,7 @@
   .header .mobile--opener {
     display: inline-block;
   }
-  .company__introduce, .product__info, .footer .inner {
+  .company__overview, .company__introduce, .product__info, .footer .inner {
     width: calc(100% - 40px);
   }
   .header .logo {
@@ -391,8 +515,49 @@
   .company__introduce .company__info {
     display: block;
   }
+  .company__introduce .company__info .con__box .content .content__desc p {
+    font-size: 12px;
+  }
   #wrap .company__introduce .company__info .con__box {
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .company__introduce .company__info {
+    margin-top: 32px;
+  }
+  .company__introduce .company__info .con__box {
+    height: 220px;
+  }
+  .company__introduce .company__info .con__box .read__more {
+    right: 28px;
+    top: 28px;
+    left: inherit;
+  }
+  .product__info .product_sec__desc {
+    font-size: 16px;
+  }
+  .product__wrap .swiper-slide img {
+    width: 65%;
+  }
+  .product__wrap .swiper-slide {
+    border: none;
+  }
+  .product__wrap .btn__group {
+    top: -140px;
+  }
+  .customer__cs .customer__text h2 {
+    font-size: 5vw;
+  }
+  .footer__bottom {
+    align-items: end;
+  }
+  .footer__bottom .footer__slogan {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 480px) {
+  .footer__bottom .footer__slogan {
+    font-size: 4.4vw;
   }
 }
 .mobile__content {
