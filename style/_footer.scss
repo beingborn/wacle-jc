@@ -1,0 +1,51 @@
+.footer {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f2f2f;
+    min-height: 245px;
+
+    .inner {
+        width: calc(100% - 120px);
+        margin: 0px auto;
+        position: relative;
+
+        .footer__desc {
+            padding-top: 48px;
+
+            .name {
+                font-weight: bold;
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 15px;
+                color: #fff;
+                margin-bottom: 8px;
+            }
+        }
+
+    }
+
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__logo {
+        margin-top: 40px;
+    }
+
+    .footer__slogan {
+        font-size: 48px;
+        color: #fff;
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+

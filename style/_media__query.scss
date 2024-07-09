@@ -1,0 +1,42 @@
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) {
+  
+} 
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px){
+  .main__hero .main__text .company__slogan {
+    font-size: 5.5vw;
+  }
+
+  .main__hero .main__text .company__desc {
+    font-size: 20px;
+  }
+} 
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+
+  // 메인 텍스트 영역
+  .main__hero .main__text .company__slogan {
+    font-size: 7.7vw;
+  }
+
+  .main__hero .main__text .company__desc {
+    font-size: 18px;
+  }
+
+  .main__hero .main__text .company__promise p {
+    font-size: 13px;
+  } 
+
+  // gnb 변경
+  .gnb { display: none;}
+  .header .header__wrap {padding-right:20px; justify-content: end; }
+  .header .mobile--opener {display: inline-block; }
+
+  .company__introduce, .product__info, .footer .inner {
+    width: calc(100% - 40px);
+  }
+  .header .logo {left: 20px;}
+}

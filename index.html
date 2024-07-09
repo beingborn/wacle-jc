@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wacle global</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- 스와이퍼 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- 애니메이트 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    </style>
+</head>
+<body>
+   <div id="wrap">
+    <header class="header">
+      <div class="header__wrap">
+        <h1 class="logo">
+          <img src="./img/main__logo.png" alt="홈페이지 메인로고">
+        </h1>
+        <div class="gnb">
+          <ul class="gnb__menu">
+            <li class="gnb__item">
+              <a href="#">회사소개</a>
+              <ul class="sub__menu">
+                <li><a href="#">CEO 인사말</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li class="gnb__item">
+              <a href="#">제품소개</a>
+              <ul class="sub__menu">
+                <li><a href="#">수중연소</a></li>
+                <li><a href="#">양방향 여과 장치</a></li>
+                <li><a href="#">폐수 무방류</a></li>
+                <li><a href="#">제품 4</a></li>
+                <li><a href="#">제품 5</a></li>
+                <li><a href="#">제품 6</a></li>
+                <li><a href="#">제품 7</a></li>
+              </ul>
+            </li>
+            <li class="gnb__item">
+              <a href="#">자료실</a>
+              <ul class="sub__menu">
+                <li><a href="#">인증현황</a></li>
+              </ul>
+            </li>
+            <li class="gnb__item">
+              <a href="#">고객지원</a>
+              <ul class="sub__menu">
+                <li><a href="#">고객문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="mobile--opener"></a>
+        <div class="mobile__gnb">
+          <div class="mobile__content">
+            <span class="mo__slogan">Wacle with you!</span>
+            <ul class="mo__menu">
+              <li class="mo__item">
+                <a href="#">
+                  회사소개
+                  <span class="arrow--"></span>
+                </a>
+                <ul class="mo__sub">
+                  <li>
+                    <a href="#">CEO 인사말</a>
+                  </li>
+                  <li>
+                    <a href="#">오시는 길</a>
+                  </li>
+                  <li>
+                    <a href="#">연혁</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mo__item">
+                <a href="#">
+                  제품소개
+                  <span class="arrow--"></span>
+                </a>
+                <ul class="mo__sub">
+                  <li><a href="#">수중연소</a></li>
+                  <li><a href="#">양방향 여과 장치</a></li>
+                  <li><a href="#">폐수 무방류</a></li>
+                  <li><a href="#">제품 4</a></li>
+                  <li><a href="#">제품 5</a></li>
+                  <li><a href="#">제품 6</a></li>
+                  <li><a href="#">제품 7</a></li>
+                </ul>
+              </li>
+              <li class="mo__item">
+                <a href="#">
+                  자료실
+                  <span class="arrow--"></span>
+                </a>
+                <ul class="mo__sub">
+                  <li><a href="#">인증현황</a></li>
+                </ul>
+              </li>
+              <li class="mo__item">
+                <a href="#">
+                  고객지원
+                  <span class="arrow--"></span>
+                </a>
+                <ul class="mo__sub">
+                  <li><a href="#">고객문의</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 메인 비주얼 영역  -->
+    <section class="main__hero">
+      <div class="black--bg"></div>
+      <div class="main__text">
+        <h2 class="company__desc animate__animated animate__fadeInUp">글로벌 비즈니스를 위한 No.1 기업</h2>
+        <p class="company__slogan animate__animated animate__fadeInUp">WACLE GLOBAL WITH YOU!</p>
+        <div class="company__promise animate__animated animate__fadeInUp">
+          <p>24년 전통으로 다져진 OO으로</p>
+          <p>최상의 품질의 결과물을 낼 것을 약속드립니다.</p>
+        </div> 
+      </div>
+    </section>
+
+    <!-- 회사 소개 -->
+    <section class="company__introduce">
+      <div class="inner">
+        <div class="section__top">
+          <div>
+            <h2 class="section__title">COMPANY</h2>
+            <p class="section__desc">회사소개</p>
+          </div>
+          <a class="more__btn" href="#">더 알아보기
+            <span></span>
+          </a>
+        </div>
+        <div class="company__info">
+          <div class="con__box">
+            <div class="content">
+              <h2>CEO 인사말</h2>
+              <div class="content__desc">
+                <p>[회사명]의 CEO [이름]입니다. 저희 회사는 고객의 만족을 최우선으로</p>
+                <p>생각하며 최고의 품질을 제공하기 위해 항상 노력하고 있습니다.</p>
+                <p>여러분의 지속적인 관심과 성원 부탁드립니다. 감사합니다.</p>
+              </div>
+              <a href="#" class="read__more">+ read more</a>
+            </div>
+          </div>
+          <div class="con__box">
+            <div class="content">
+              <h2>오시는 길</h2>
+              <div class="content__desc">
+                <p>경기도 파주시  하우4길(상지석동)</p>
+                <p>OO역에서 도보 8분, 236번 버스</p>
+                <p>TEL : 031-842-0876 </p>
+              </div>
+              <a href="#" class="read__more">+ read more</a>
+            </div>
+          </div>
+          <div class="con__box">
+            <div class="content">
+              <h2>연혁</h2>
+              <div class="content__desc">
+                <p>2020년 파주 상지동 설립</p>
+                <p>2022년 핵심 기술 특허</p>
+                <p>2024년 신세대 프로젝트 적용</p>
+              </div>
+              <a href="#" class="read__more">+ read more</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 제품 소개 -->
+    <section class="product__info">
+      <div class="inner">
+        <h2 class="section__title">PRODUCT INFO</h2>
+        <p class="product_sec__desc">건강한 물을 위해 새로운 기술에 늘 최선을 다하고 있습니다.</p>
+
+        <div class="product__wrap">
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>수중 원소식 기계1</h2>
+                  <p>최신 원료의 기술로 만들어집니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>재활용 연소식 기계 2</h2>
+                  <p>배기가스를 전혀 배출하지 않습니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>수중 원소식 기계1</h2>
+                  <p>최신 원료의 기술로 만들어집니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>수중 원소식 기계1</h2>
+                  <p>최신 원료의 기술로 만들어집니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>수중 원소식 기계1</h2>
+                  <p>최신 원료의 기술로 만들어집니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>수중 원소식 기계1</h2>
+                  <p>최신 원료의 기술로 만들어집니다.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
+                <div class="product__sub">
+                  <h2>수중 원소식 기계1</h2>
+                  <p>최신 원료의 기술로 만들어집니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="btn__group">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 고객 지원 -->
+    <section class="customer__cs">
+      <div class="customer__text">
+        <h2>다양하고 골치아픈 민원들을 
+          <br>
+        와클 글로벌에서 해결해드립니다.</h2>
+        <a href="#" class="apply__btn">신청하기</a>
+        <button type="button" class="apply__tel" >TEL : 031-841-0876</button>
+      </div>
+      <div class="black--bg"></div>
+    </section>
+    <!-- footer -->
+     <footer class="footer">
+      <div class="inner">
+        <div class="footer__desc">
+          <h2 class="name">(주)와클 글로벌</h2>
+          <p class="info">회사 위치 : 경기도 파주시 상지선로 296 7길</p>
+          <p class="business">사업자 등록번호 : 1709210-3014576</p>
+          <p class="when__build">회사 설립: 2017년도 08월 17일</p>
+        </div>
+        <div>
+          <div class="footer__bottom">
+            <div class="footer__logo">
+              <img src="./img/main__logo.png" alt="하단 로고">
+            </div>
+            <div class="footer__slogan">
+              <span>Wacle Global with you!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".productSwiper", {
+      slidesPerView: 4,
+      // spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/default.js"></script>
+</body>
+</html>
