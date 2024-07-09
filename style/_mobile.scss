@@ -45,7 +45,15 @@
 
   .mo__sub {
     display: none;
-    background-color: #0051A2;
+    background-color: #6B6B6B;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    
+    li {
+      a {
+        color: #000;
+      }
+    }
   }
 
   .mo__item > a {

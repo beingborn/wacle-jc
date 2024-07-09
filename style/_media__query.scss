@@ -39,4 +39,10 @@
     width: calc(100% - 40px);
   }
   .header .logo {left: 20px;}
+
+  .company__introduce .company__info {
+    display: block;
+  }
+
+  #wrap .company__introduce .company__info .con__box {width: 100%;}
 }
