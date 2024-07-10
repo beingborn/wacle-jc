@@ -5,7 +5,9 @@
 @import 'media__query';
 @import 'mobile';
 
-
+body {
+  overflow-x: hidden;
+}
 
 .inner {
   width: 100%;
