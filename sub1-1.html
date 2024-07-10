@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wacle global</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- 스와이퍼 CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- 애니메이트 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- aos CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+          <div class="header__wrap">
+            <h1 class="logo">
+              <img src="./img/main__logo.png" alt="홈페이지 메인로고">
+            </h1>
+            <div class="gnb">
+              <ul class="gnb__menu">
+                <li class="gnb__item">
+                  <a href="#">회사소개</a>
+                  <ul class="sub__menu">
+                    <li><a href="#">CEO 인사말</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__item">
+                  <a href="#">제품소개</a>
+                  <ul class="sub__menu">
+                    <li><a href="#">수중연소</a></li>
+                    <li><a href="#">양방향 여과 장치</a></li>
+                    <li><a href="#">폐수 무방류</a></li>
+                    <li><a href="#">제품 4</a></li>
+                    <li><a href="#">제품 5</a></li>
+                    <li><a href="#">제품 6</a></li>
+                    <li><a href="#">제품 7</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__item">
+                  <a href="#">자료실</a>
+                  <ul class="sub__menu">
+                    <li><a href="#">인증현황</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__item">
+                  <a href="#">고객지원</a>
+                  <ul class="sub__menu">
+                    <li><a href="#">고객문의</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="mobile--opener"></a>
+            <div class="mobile__gnb">
+              <div class="mobile__content">
+                <span class="mo__slogan">Wacle with you!</span>
+                <ul class="mo__menu">
+                  <li class="mo__item">
+                    <a href="#">
+                      회사소개
+                      <span class="arrow--"></span>
+                    </a>
+                    <ul class="mo__sub">
+                      <li>
+                        <a href="#">CEO 인사말</a>
+                      </li>
+                      <li>
+                        <a href="#">오시는 길</a>
+                      </li>
+                      <li>
+                        <a href="#">연혁</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mo__item">
+                    <a href="#">
+                      제품소개
+                      <span class="arrow--"></span>
+                    </a>
+                    <ul class="mo__sub">
+                      <li><a href="#">수중연소</a></li>
+                      <li><a href="#">양방향 여과 장치</a></li>
+                      <li><a href="#">폐수 무방류</a></li>
+                      <li><a href="#">제품 4</a></li>
+                      <li><a href="#">제품 5</a></li>
+                      <li><a href="#">제품 6</a></li>
+                      <li><a href="#">제품 7</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo__item">
+                    <a href="#">
+                      자료실
+                      <span class="arrow--"></span>
+                    </a>
+                    <ul class="mo__sub">
+                      <li><a href="#">인증현황</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo__item">
+                    <a href="#">
+                      고객지원
+                      <span class="arrow--"></span>
+                    </a>
+                    <ul class="mo__sub">
+                      <li><a href="#">고객문의</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- 메인 비주얼 영역  -->
+        <section class="sub__hero">
+          <div class="black--bg"></div>
+          <div class="main__text">
+            <h2 class="sub__desc animate__animated animate__fadeInUp">CEO 인사말</h2>
+            <p class="sub__slogan animate__animated animate__fadeInUp">ceo hello word...</p>
+          </div>
+        </section>
+
+        <section class="sub__content">
+            <div class="inner sub__inner-1">
+                <div class="banner__desc">
+                    <p>CEO 인사말</p>
+                </div>
+                <div class="ceo__section">
+                    <div class="ceo__photo"></div>
+                    <div class="ceo__message">
+                        <p>CEO의 인사말 내용을 여기에 작성합니다. 이곳에 회사의 비전과 목표, CEO의 메시지를 넣을 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- AOS INIT -->
+  <script>
+    AOS.init();
+  </script>
+    
+    <!-- 제이쿼리 및 바닐라 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/default.js"></script>
+</body>
+</html>

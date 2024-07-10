@@ -506,7 +506,7 @@
   .header .mobile--opener {
     display: inline-block;
   }
-  .company__overview, .company__introduce, .product__info, .footer .inner {
+  .company__overview, .company__introduce, .product__info, .footer .inner .sub__content .inner {
     width: calc(100% - 40px);
   }
   .header .logo {
@@ -611,6 +611,123 @@
 }
 .mobile__gnb .mo__item > a:hover {
   color: #0051A2;
+}
+
+#sub__wrap {
+  height: 100vh;
+}
+
+#sub__wrap .header {
+  position: relative;
+}
+
+.sub__hero {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  min-height: 600px;
+  background: url(../img/main__image-0.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.sub__hero .black--bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 3;
+}
+.sub__hero .main__text {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sub__hero .main__text h2, .sub__hero .main__text p {
+  color: #fff;
+}
+.sub__hero .main__text .sub__slogan {
+  font-weight: 500;
+  font-size: 20px;
+}
+.sub__hero .main__text .sub__desc {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.sub__content {
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+  width: calc(100% - 120px);
+  margin: 0 auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.sub__content .sub__inner-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub__content .banner__desc {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sub__content .ceo__section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.sub__content .ceo__photo {
+  flex: 1 1 400px;
+  background-color: #ddd;
+  height: 400px; /* 원하는 높이로 조정 */
+}
+.sub__content .ceo__message {
+  flex: 2 1 400px;
+  padding: 10px;
+}
+.sub__content .map__section {
+  display: block;
+}
+.sub__content .map__section .map__photo {
+  height: 480px;
+  max-height: 640px;
+}
+.sub__content .map__section .map__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact__us {
+  margin-bottom: 40px;
+}
+
+.map__desc {
+  margin-top: 60px;
+}
+.map__desc h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.map__desc .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map__desc p {
+  font-size: 20px;
 }
 
 .inner {

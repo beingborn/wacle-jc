@@ -88,7 +88,7 @@
 
 
   // 회사 소개 모바일 영역
-  .company__overview, .company__introduce, .product__info, .footer .inner {
+  .company__overview, .company__introduce, .product__info, .footer .inner .sub__content .inner {
     width: calc(100% - 40px);
   }
   .header .logo {left: 20px;}
