@@ -50,6 +50,7 @@
 
   .overview__left {
     width: 50%;
+    padding: 0 60px;
   }
 
   .overview__right {
@@ -80,16 +81,27 @@
     margin-top: 72px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    // width: 100vw;
+    // margin-left: calc(-50vw + 50%);
 
     .con__box {
       height: 356px;
       position: relative;
-      border-radius: 8px;
+      // border-radius: 8px;
       overflow: hidden;
       // background-color: #F6F6F6;
       background-size: cover;
       position: relative;
       z-index: 4;
+      transition-property: transform;
+      transition-duration: 0.1s;
+      transition-timing-function: ease;
+
+      .con__box:hover .content {
+        // transform: translateY(-20px); /* 텍스트 위치 변경 예시 */
+        opacity: 0.5;
+      }
 
       .black--bg {
         position: absolute;
@@ -103,14 +115,14 @@
       }
 
       .content {
-        padding-left: 28px;
+        padding-left: 40px;
 
         .read__more {
           z-index: 6;
         }
 
         h2 {
-          padding-top: 28px;
+          padding-top: 40px;
           font-weight: bold;
           font-size: 24px;
           color: #fff;
@@ -135,7 +147,7 @@
 
       .read__more {
         position: absolute;
-        left: 28px;
+        right: 28px;
         bottom: 46px;
         color: #fff;
         font-weight: 700;
@@ -144,17 +156,19 @@
           color: #0051A2;
         }
       }
-
     }
 
+ 
     .con__box:nth-child(1){
-      width: calc(40% - 20px);
+      // width: calc(33.3% - 20px);
+      width: 33.333%;
       background: url(../img/company__info-bg-1.jpg) no-repeat center;
       background-size: cover;
     }
 
     .con__box:nth-child(2), .con__box:nth-child(3) {
-      width: calc(30% - 20px);
+      width: 33.333%;
+      // width: calc(33.3% - 20px);
 
     }
 
@@ -196,7 +210,7 @@
 
 .customer__cs {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background: url(../img/cs__img.png) no-repeat center;
   position: relative;
   background-size: cover;
@@ -209,18 +223,23 @@
     height: 100%;
     width: 100%;
     background-color: #000;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: 67;
   }
   
 
   .customer__text {
-    text-align: center;
-    position: absolute;
+    text-align: left;
+    position: relative;
     z-index: 68;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // left: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 120px);
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     h2{
       font-size: 36px;
@@ -235,12 +254,15 @@
     }
 
     .apply__btn {
+      text-align: center;
       margin-top: 28px;
       display: inline-block;
-      width: 200px;
+      // width: 200px;
+      padding: 0 20px;
       height: 48px;
       line-height: 48px;
       color: #fff;
+      font-weight: bold;
       background-color: #0051A2;
       border-radius: 30px;
     }
@@ -249,10 +271,67 @@
       background: transparent;
       border: 0;
       text-decoration: underline;
-      display: block;
+      // display: block;
       margin: 0px auto;
       padding-top: 20px;
       color: #fff;
+    }
+  }
+}
+
+
+.form {
+  width: 640px;
+
+  .cs__form {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+
+    label {
+      color: #fff;
+      display: bock;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 12px;
+      white-space: nowrap;
+    }
+
+    input {
+      padding: 8px 0;
+      background: transparent;
+      border: 0;
+      width: 100%;
+    }
+  }
+
+  .cs__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .personal {
+      span { color: #fff ;}
+    }
+
+    .form--complete {
+      padding: 0 20px;
+      height: 48px;
+      line-height: 48px;
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all .5s;
+
+      &:hover {
+        background-color: #0051A2;
+      }
     }
   }
 }

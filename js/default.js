@@ -1,3 +1,5 @@
+console.log("hello")
+
 /**
  * 배경 이미지 변경 함수 
  * --------------------------
@@ -45,10 +47,10 @@ setInterval(changeBackgroundImage, 3000);
 
 
 $(document).ready(function(){
-  $('.sub__menu').css({
-    "display": "none",
-    "opacity": 0
-  })
+  // $('.sub__menu').css({
+  //   "display": "none",
+  //   "opacity": 0
+  // })
 
   $('.gnb__item').mouseenter(function() {
     $('.header__wrap').css({
@@ -97,7 +99,7 @@ $(document).ready(function(){
 // 현재 하고 싶은 것 : 첫번째 클릭 시 toggle 되면서 body 스크롤 막기, 두번째 클릭시 다시 visible 풀기
 
 $(document).ready(function(){
-  $('.mobile__gnb').hide();
+  // $('.mobile__gnb').hide();
   $('.mobile--opener').click(function(){
     $('.mobile__gnb').toggle();
 
@@ -122,8 +124,36 @@ let moBtnIndex;
     $('.mobile__gnb .mo__sub').eq(moBtnIndex).toggle();
   })
 
-  // if($('body').css('overflow')=== "hidden") {
-  //   $('body').css('overflow', 'visible');
-  // } else {
-  //   $('body').css('overflow', 'hidden')
-  // }
+
+
+  /**
+   * con-box 마우스 호버 시 백그라운드 이미지 크기 확대
+   * 
+   */
+
+  let box = $('.con__box');
+  console.log(box)
+
+  $(document).ready(function() {
+    $('.con__box').hover(
+      function() {
+
+        conIndex = $('.con__box').index(this)
+        // $(this).css('background-size', '120% 120%');
+        $(this).css('transform', 'scale(1.1)');
+        $('.con__box').eq(conIndex).css("z-index", "333")
+        $('.con__box').not($(this)).css({
+          "z-index" : "332",
+          "opacity" : "0.9"
+        })
+      },
+      function() {
+        // $(this).css('background-size', '100% 100%');
+        $(this).css('transform', 'scale(1)');
+        $('.con__box').eq(conIndex).css("z-index", "333")
+        $('.con__box').not($(this)).css({
+          "opacity" : "1"
+        })
+      }
+    );
+  });

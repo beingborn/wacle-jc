@@ -6,7 +6,9 @@
 @import 'mobile';
 @import 'sub';
 
-
+body {
+  overflow-x: hidden;
+}
 
 .inner {
   width: 100%;

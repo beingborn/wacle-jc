@@ -27,7 +27,7 @@
     <header class="header">
       <div class="header__wrap">
         <h1 class="logo">
-          <img src="./img/main__logo.png" alt="홈페이지 메인로고">
+          <img src="./img/transparent__logo.svg" alt="홈페이지 메인로고">
         </h1>
         <div class="gnb">
           <ul class="gnb__menu">
@@ -129,9 +129,9 @@
     <section class="main__hero">
       <div class="black--bg"></div>
       <div class="main__text">
-        <h2 class="company__desc animate__animated animate__fadeInUp">글로벌 비즈니스를 위한 No.1 기업</h2>
-        <p class="company__slogan animate__animated animate__fadeInUp">WACLE GLOBAL WITH YOU!</p>
-        <div class="company__promise animate__animated animate__fadeInUp">
+        <h2 class="company__desc animate__animated animate__fadeInUp animate__delay-.5s">글로벌 비즈니스를 위한 No.1 기업</h2>
+        <p class="company__slogan animate__animated animate__fadeInUp animate__delay-.5s">WACLE GLOBAL WITH YOU!</p>
+        <div class="company__promise animate__animated animate__fadeInLeft animate__delay-1s">
           <p>24년 전통으로 다져진 OO으로</p>
           <p>최상의 품질의 결과물을 낼 것을 약속드립니다.</p>
         </div> 
@@ -149,18 +149,76 @@
           </div>
           <div class="company__record">
             <div class="index-1">
-              <h2>20k</h2>
-              <p>최고 투자율p>
+              <h2><span class="counter" id="number">0</span>k</h2>
+              <p>최고 투자율
             </div>
             <div class="index-2">
-              <h2>13만명</h2>
+              <h2><span class="counter" id="number2">0</span>만명</h2>
               <p>15% 감소</p>
             </div>
             <div class="index-3">
-              <h2>멸균율</h2>
+              <h2><span class="counter" id="number3">0</span>% 멸균</h2>
               <p>35명</p>
             </div>
           </div>
+
+            <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  var startCount1 = { var: 0 };
+  var startCount2 = { var: 0 };
+  var startCount3 = { var: 0 };
+
+  gsap.to(startCount1, {
+    var: 100,
+    duration: 2,
+    ease: "none",
+    onUpdate: () => {
+      document.getElementById("number").innerText = startCount1.var.toFixed();
+    },
+    scrollTrigger: {
+      trigger: ".company__overview",
+      start:"center center",
+      end : "bottom center",
+      toggleActions: "restart pause restart none",      
+    }
+  });
+
+  gsap.to(startCount2, {
+    var: 200,
+    duration: 2,
+    ease: "none",
+    onUpdate: () => {
+      document.getElementById("number2").innerText = startCount2.var.toFixed();
+    },
+    scrollTrigger: {
+      trigger: ".company__overview",
+      start:"center center",
+      end : "bottom center",
+      toggleActions: "restart pause restart none",      
+    }
+  });
+
+  gsap.to(startCount3, {
+    var: 26,
+    duration: 2,
+    ease: "none",
+    onUpdate: () => {
+      document.getElementById("number3").innerText = startCount3.var.toFixed();
+    },
+    scrollTrigger: {
+      trigger: ".company__overview",
+      start:"center center",
+      end : "bottom center",
+      toggleActions: "restart pause restart none",
+    }
+  });
+  </script>
         </div>
         <div class="overview__right" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
           <video src="./img/company__overview_video.mp4 " muted autoplay playsinline loop></video>
@@ -305,12 +363,59 @@
     <!-- 고객 지원 -->
     <section class="customer__cs" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
       <div class="customer__text">
-        <h2>다양하고 골치아픈 민원들을 
-          <br>
-        와클 글로벌에서 해결해드립니다.</h2>
-        <a href="#" class="apply__btn">신청하기</a>
-        <button type="button" class="apply__tel" >TEL : 031-841-0876</button>
+        <div>
+          <h2>다양하고 골치아픈 민원들을 
+            <br>
+          와클 글로벌에서 해결해드립니다.</h2>
+          <a href="#" class="apply__btn">상담신청</a>
+          <button type="button" class="apply__tel" >TEL : 031-841-0876</button>
+        </div>
+          <!-- 신청 폼 -->
+          <form class="form" action="">
+            <div class="form__left">
+                <div class="cs__form form--must">
+                  <label for="name">회사명</label>
+                  <input type="text" name="company" id="company" placeholder="회사명" class="form-main" required="">
+                </div>
+                <div class="cs__form form--must">
+                  <label for="email">이메일</label>
+                  <input type="email" name="email" id="email" placeholder="이메일 주소" class="form-main" required="">
+                </div>      
+              <div class="cs__form form--must">
+                <label for="name">이름</label>
+                <input type="text" name="phone" id="name" placeholder="연락처" class="form-main" required="">
+              </div>
+            </div>
+            <div class="form__right">
+              <div class="cs__form form--must">
+                <label for="name">연락처</label>
+                <input type="text" name="phone" id="phone" placeholder="연락처" class="form-main" required="">
+              </div>
+              <div class="cs__form form--must">
+                <label for="name">제목</label>
+                <input type="text" name="phone" id="title" placeholder="연락처" class="form-main" required="">
+              </div>
+              <div class="cs__form form--must">
+                <label for="name">내용</label>
+                <input type="text" name="phone" id="phone" placeholder="연락처" class="form-main" required="">
+              </div>
+            </div>
+
+            <div class="cs__bottom">
+              <div class="personal">
+                <label for="personal"></label>
+                <input type="checkbox" value="개인정보 수집 동의" class="personal-check">
+                <span>개인정보 수집에 동의합니다. (필수)</span>
+              </div>
+              <div class="form__submit">
+                <input type="submit" value="제출하기" class="form--complete">
+              </div>
+            </div>
+          </form>
+
+        
       </div>
+      
       <div class="black--bg"></div>
     </section>
     <!-- footer -->
@@ -325,7 +430,7 @@
         <div>
           <div class="footer__bottom">
             <div class="footer__logo">
-              <img src="./img/main__logo.png" alt="하단 로고">
+              <img src="./img/transparent__logo.svg" alt="하단 로고">
             </div>
             <div class="footer__slogan">
               <span>Wacle Global with you!</span>
@@ -344,9 +449,7 @@
     AOS.init();
   </script>
 
-  <!-- GSAP -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
