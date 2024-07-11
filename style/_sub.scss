@@ -3,15 +3,23 @@
 #sub__wrap .header {position: relative;}
 
 
+.sub__wrap {
+    height: 200vh;
+}
+
+.sub__section {
+    height: 100vh;
+}
+
 .sub__hero{
     top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
-    min-height: 600px;
-    background: url(../img/main__image-0.jpg) no-repeat center;
-    background-size: cover;
-    position: relative;
+    position: fixed;
+
+
+
 
     .black--bg {
         position: absolute;
@@ -20,7 +28,7 @@
         width: 100%;
         height: 100%;
         background-color: #000;
-        opacity: 0.3;
+        opacity: 0.6;
         z-index: 3;
     }
 
@@ -45,59 +53,100 @@
         }
     
         .sub__desc {
-          font-size: 32px;
+          font-size: 40px;
 
           font-weight: bold;
           margin-bottom: 8px;
           white-space: nowrap;
         }
     }
-
-
 }
 
+// 서브 상단 이미지
+
+.sub__1 {
+    background: url(../img/sub__main-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sub__1-2 {
+    background: url(../img/loacation_sub-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sub__1-3 {
+    background: url(../img/sub__main-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
 .sub__content {
-    position: relative;
+    position: sticky;    
+    top: 0;
     background-color: #fff;
     z-index: 10;
-    width: calc(100% - 120px);
-    margin: 0 auto;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    width: calc(100%);
+    margin: auto auto;
+    margin-top: 100vh;
 
     .sub__inner-1 {
+        width: 1280px;
+        padding-top: 160px;
+        padding-bottom: 120px;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    .banner__desc {
-        margin-bottom: 20px;
-        text-align: center;
+    .banner__title {
+        margin-bottom: 48px;
+        text-align: left;
+
+
+        h2 {
+            font-weight: 900;
+            font-family: "Inter";
+            font-size: 40px;
+            position: relative;
+            
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 120px;
+                height: 80px;
+                background: url(../img/ceo__quote.svg)no-repeat center;
+                position: absolute;
+                bottom: 60px;
+                left: 0;
+            }
+        }
     }
     
     .ceo__section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 100%;
+        position: relative;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 20px;
+
     }
     
     .ceo__photo {
-        flex: 1 1 400px;
-        background-color: #ddd;
-        height: 400px; /* 원하는 높이로 조정 */
+        // flex: 1 1 400px;
+        // background-color: #ddd;
+        // height: 400px; /* 원하는 높이로 조정 */
     }
     
     .ceo__message {
-        flex: 2 1 400px;
-        padding: 10px;
+        padding-right: 450px;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 60px;
+        font-weight: 500;
+        opacity: 0.9;
     }
 
-    .map__section {
+    .map {
         display: block;
 
-        .map__photo {
             height: 480px;
             max-height: 640px;
 
@@ -106,17 +155,19 @@
                 height: 100%;
                 object-fit: cover;
             }
-        }
     }
     
 }
+
+
+
 
 .contact__us {
     margin-bottom: 40px;
 }
 
 .map__desc {
-    margin-top: 60px;
+    margin-bottom: 20px;
 
     h2 {
         font-size: 32px;
@@ -130,11 +181,224 @@
     }
 
     p {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 12px;
+
+        span {
+            font-weight: bold;
+            color: gray;
+            font-size: 20px;
+        }
     }
  
 }
 
-
+// 비즈니스 조직도 영역
     
 
+    .business__section {
+        border: 1px dashed green;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+
+        .ceo {
+            text-align: center;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            background-color: #0051A2;
+            color: #fff;
+            font-size: 32px;
+            display: block;
+            margin: 0px auto;
+            font-weight: bold;
+        }
+
+   
+
+        .depth__wrap {
+            width: 26%;
+            margin-top: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+
+
+            .depth__header {
+                text-align: center;
+                padding: 8px 0;
+                background-color: #0051A2;
+                color: #fff;
+                font-weight: bold;
+                // border: 1px dashed red;
+            }
+
+            .depth__body {
+                text-align: center;
+                padding:20px;
+                background-color: #f0f0f0;
+                // border: 1px dashed red;
+                margin-top: 8px;
+
+                p {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+
+    .depth__1 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border: 1px solid greenyellow;
+    
+
+        .depth__wrap {
+            width: 26%;
+        }
+
+        .depth__global {
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+
+            .depth__header {
+            background-color: gray;
+
+            }
+        }
+    }
+
+    .depth__2 {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .depth__3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto;
+
+        .depth__wrap {
+            width: calc(25% - 20px);
+        }
+    }
+
+    .certification__total {
+        margin-top: 40px;
+    }
+
+    .certification__section {
+        h2{
+            padding-bottom: 12px;
+            border-bottom: 1px solid black;
+        }
+
+        .certification__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .content {
+                width: calc(20% - 20px);
+                min-height: 280px;
+
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .certification__name {
+                    text-align: center;
+                    padding: 4px 0;
+                    background-color: gray;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+
+    // 제품 소개 
+
+    .sub__content .product__title {
+        margin-bottom: 32px;
+    }
+
+    .product__content {
+        .product__title {
+            padding-bottom: 12px;
+            border-bottom: 1px solid black;
+        }
+        
+        .product__desc {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+
+    .product__section {
+        margin-top: 80px;
+    }
+
+
+    // 자료실
+
+    .file__section {
+        margin-bottom: 80px;
+
+        .file__category {
+            font-size: 16px;
+            color: lightgray;
+            font-weight: 500;
+        }
+    }
+
+    .table{border-collapse: collapse; width: 100%; text-align: center;}
+    .table thead th{border-top: 2px solid black;border-bottom: 1px solid black; border-width: 1px 0; padding: 12px 0;}
+    .table tbody td:nth-child(2){text-align: left;}
+    .table td:first-child, .table th:first-child{width: 10%;}
+    .table td:nth-child(3), .table th:nth-child(3){width: 30%;}
+    .table td:nth-child(5), .table th:nth-child(4){width: 15%;}
+
+    .table tbody tr td {padding: 20px 0; border-bottom: 1px solid lightgray;}
+    .table tbody tr:hover{background-color:lightcyan;}
+    .table tbody td a{text-decoration: none; color: black; font-weight: bold;}
+    .table tbody td a:hover{text-decoration: underline;}
+
+    .pagination {
+        margin: 0px auto;
+        text-align: center;
+        padding-top: 40px;
+
+        a {
+            padding: 0 8px;
+            font-size: 18px;
+            font-weight: bold;
+            &:hover {
+                color:#0051A2;
+            }
+        }
+        
+    }
