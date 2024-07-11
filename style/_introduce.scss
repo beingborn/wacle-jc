@@ -94,8 +94,8 @@
       background-size: cover;
       position: relative;
       z-index: 4;
-      transition-property: transform;
-      transition-duration: 0.1s;
+      transition-property: background-size, width;
+      transition-duration: .3s;
       transition-timing-function: ease;
 
       .con__box:hover .content {

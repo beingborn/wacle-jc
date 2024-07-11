@@ -196,8 +196,8 @@
   background-size: cover;
   position: relative;
   z-index: 4;
-  transition-property: transform;
-  transition-duration: 0.1s;
+  transition-property: background-size, width;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
 }
 .company__introduce .company__info .con__box .con__box:hover .content {
@@ -786,6 +786,35 @@
     font-size: 4.4vw;
   }
 }
+/* PC 소형 to 노트북 (해상도 1024px ~ 1440px)*/
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .sub__wrap .sub__content .sub__inner-1 {
+    width: calc(100% - 120px);
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .sub__wrap .sub__content .sub__inner-1 {
+    width: calc(100% - 120px);
+  }
+  .sub__wrap .sub__content .ceo__message {
+    padding-right: 240px;
+  }
+}
+@media all and (max-width: 767px) {
+  .sub__wrap .sub__content .sub__inner-1 {
+    width: calc(100% - 40px);
+  }
+  .sub__wrap .sub__content .ceo__message {
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .sub__wrap .business__section .depth__wrap .depth__body {
+    padding: 8px;
+  }
+  .business__section .depth__wrap .depth__body p {
+    font-size: 14px;
+  }
+}
 .mobile__content {
   padding: 40px 40px 0 40px;
 }
@@ -886,12 +915,12 @@
 }
 .sub__hero .main__text .sub__slogan {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 28px;
 }
 .sub__hero .main__text .sub__desc {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   white-space: nowrap;
 }
 
@@ -906,7 +935,27 @@
 }
 
 .sub__1-3 {
-  background: url(../img/sub__main-1.jpg) no-repeat center;
+  background: url(../img/sub__certificate.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.sub__1-4 {
+  background: url(../img/sub__businessgroup.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.sub__2-1 {
+  background: url(../img/company__info-bg-3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.sub__3-1 {
+  background: url(../img/sub__file.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.sub__4-1 {
+  background: url(../img/cs__img.png) no-repeat center;
   background-size: cover;
 }
 
@@ -995,9 +1044,6 @@
   font-size: 20px;
 }
 
-.business__section {
-  border: 1px dashed green;
-}
 .business__section .ceo {
   text-align: center;
   width: 120px;
@@ -1038,7 +1084,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  border: 1px solid greenyellow;
 }
 .depth__1 .depth__wrap {
   width: 26%;
@@ -1089,7 +1134,6 @@
 }
 .certification__section .certification__wrap .content {
   width: calc(20% - 20px);
-  min-height: 280px;
 }
 .certification__section .certification__wrap .content a {
   display: block;
@@ -1172,7 +1216,7 @@
   border-bottom: 1px solid lightgray;
 }
 
-.table tbody tr:hover {
+.table__hover tbody tr:hover {
   background-color: lightcyan;
 }
 
@@ -1182,7 +1226,7 @@
   font-weight: bold;
 }
 
-.table tbody td a:hover {
+.table__hover tbody td a:hover {
   text-decoration: underline;
 }
 
@@ -1198,6 +1242,47 @@
 }
 .pagination a:hover {
   color: #0051A2;
+}
+
+.world__map__isolated {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.world__map__isolated img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sub__wrap .sub__form__wrap {
+  display: flex;
+}
+.sub__wrap .sub__form__wrap .cs__img {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(75%);
+}
+.sub__wrap .sub__form__wrap .cs__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.sub__wrap .form {
+  width: 100%;
+}
+.sub__wrap .form .cs__form {
+  border-bottom: 1px solid lightgray;
+}
+.sub__wrap .cs__bottom .personal span {
+  color: #000;
+}
+.sub__wrap .cs__bottom .form--complete {
+  background-color: #0051A2;
 }
 
 body {

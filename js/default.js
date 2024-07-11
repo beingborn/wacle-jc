@@ -139,17 +139,18 @@ let moBtnIndex;
       function() {
 
         conIndex = $('.con__box').index(this)
-        // $(this).css('background-size', '120% 120%');
-        $(this).css('transform', 'scale(1.1)');
+        $(this).css({'background-size' : '130% 130%'});
+        // $(this).css('transform', 'scale(1.1)');
         $('.con__box').eq(conIndex).css("z-index", "333")
         $('.con__box').not($(this)).css({
           "z-index" : "332",
-          "opacity" : "0.9"
+          "opacity" : "0.9",
+          'width' : '30%'
         })
       },
       function() {
-        // $(this).css('background-size', '100% 100%');
-        $(this).css('transform', 'scale(1)');
+        $(this).css({'background-size' : '100% 100%'});
+        // $(this).css('transform', 'scale(1)');
         $('.con__box').eq(conIndex).css("z-index", "333")
         $('.con__box').not($(this)).css({
           "opacity" : "1"

@@ -48,15 +48,15 @@
     
         .sub__slogan {
           font-weight: 500;
-          font-size: 20px;
+          font-size: 28px;
 
         }
     
         .sub__desc {
-          font-size: 40px;
+          font-size: 48px;
 
           font-weight: bold;
-          margin-bottom: 8px;
+          margin-bottom: 12px;
           white-space: nowrap;
         }
     }
@@ -75,7 +75,27 @@
 }
 
 .sub__1-3 {
-    background: url(../img/sub__main-1.jpg) no-repeat center;
+    background: url(../img/sub__certificate.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sub__1-4 {
+    background: url(../img/sub__businessgroup.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sub__2-1 {
+    background: url(../img/company__info-bg-3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sub__3-1 {
+    background: url(../img/sub__file.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sub__4-1 {
+    background: url(../img/cs__img.png) no-repeat center;
     background-size: cover;
 }
 
@@ -197,7 +217,6 @@
     
 
     .business__section {
-        border: 1px dashed green;
         // display: flex;
         // justify-content: center;
         // align-items: center;
@@ -253,7 +272,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-        border: 1px solid greenyellow;
     
 
         .depth__wrap {
@@ -312,7 +330,6 @@
 
             .content {
                 width: calc(20% - 20px);
-                min-height: 280px;
 
                 a{
                     display: block;
@@ -383,9 +400,11 @@
     .table td:nth-child(5), .table th:nth-child(4){width: 15%;}
 
     .table tbody tr td {padding: 20px 0; border-bottom: 1px solid lightgray;}
-    .table tbody tr:hover{background-color:lightcyan;}
+    .table__hover tbody tr:hover{background-color:lightcyan;}
     .table tbody td a{text-decoration: none; color: black; font-weight: bold;}
-    .table tbody td a:hover{text-decoration: underline;}
+    .table__hover tbody td a:hover{text-decoration: underline;}
+
+
 
     .pagination {
         margin: 0px auto;
@@ -402,3 +421,61 @@
         }
         
     }
+
+
+    .world__map__isolated{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+
+        img {
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+  
+
+    .sub__wrap {
+        .sub__form__wrap {
+            display: flex;
+
+            .cs__img {
+                width: 30%;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transform: translateX(75%);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+
+
+        .form {
+            width: 100%;
+        }        
+
+        .form .cs__form {
+            border-bottom: 1px solid lightgray;
+
+
+        }
+
+        .cs__bottom .personal span {
+            color: #000;
+        }
+
+        .cs__bottom .form--complete {
+            background-color: #0051A2;
+        }
+    }
+    
+
+ 
