@@ -145,7 +145,6 @@ let moBtnIndex;
         $('.con__box').not($(this)).css({
           "z-index" : "332",
           "opacity" : "0.9",
-          'width' : '30%'
         })
       },
       function() {
