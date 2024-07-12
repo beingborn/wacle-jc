@@ -822,12 +822,18 @@
   .sub__wrap .sub__content .file__wrapper .sub__inner-1, .file__room .sub__content .sub__inner-1 {
     width: calc(100% - 120px);
   }
+  .sub__wrap .sub__content .document__certification .sub__inner-1 {
+    width: calc(100% - 120px);
+  }
 }
 .certification__board .sub__content .sub__inner-1 {
   width: calc(100% - 120px);
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+  .sub__wrap .sub__content .document__certification .sub__inner-1 {
+    width: calc(100% - 120px);
+  }
   .sub__wrap .sub__content .file__wrapper .sub__inner-1 {
     width: calc(100% - 120px);
   }
@@ -842,6 +848,9 @@
   }
 }
 @media all and (max-width: 767px) {
+  .sub__wrap .sub__content .document__certification .sub__inner-1 {
+    width: calc(100% - 40px);
+  }
   .file__room .sub__content .sub__inner-1 {
     width: calc(100% - 40px);
   }
