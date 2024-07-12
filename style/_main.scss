@@ -160,6 +160,13 @@
       padding-top: 8px;
       font-weight: 600;
     }
+
+    .mouse__icon{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(/img/mouse__icon.svg) no-repeat center;
+    }
   }
 }
 
