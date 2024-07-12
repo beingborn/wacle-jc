@@ -58,6 +58,7 @@ $(document).ready(function(){
       "background-color": "#fff"
     });
     $('.gnb__menu .gnb__item > a').css("color", "#000");
+    $('.logo img').attr('src', "/img/main__logo.png")
 
     // 높이 애니메이션이 끝난 후 서브메뉴를 보이게 함
     setTimeout(() => {
@@ -76,6 +77,8 @@ $(document).ready(function(){
       "background-color": "transparent"
     });
     $('.gnb__menu .gnb__item > a').css("color", "#fff");
+    $('.logo img').attr('src', "/img/transparent__logo.svg")
+
 
     $('.sub__menu').css({
       "display": "none",
@@ -118,9 +121,6 @@ let moBtnIndex;
 
   $('.mo__item > a').click(function(){
     moBtnIndex = $('.mo__item > a').index(this)
-
-    // moBtnIndex = $(this).index();
-    // console.log(moBtnIndex)
     $('.mobile__gnb .mo__sub').eq(moBtnIndex).toggle();
   })
 
@@ -139,7 +139,7 @@ let moBtnIndex;
       function() {
 
         conIndex = $('.con__box').index(this)
-        $(this).css({'background-size' : '130% 130%'});
+        $(this).css({'background-size' : '150% 150%'});
         // $(this).css('transform', 'scale(1.1)');
         $('.con__box').eq(conIndex).css("z-index", "333")
         $('.con__box').not($(this)).css({
@@ -157,3 +157,27 @@ let moBtnIndex;
       }
     );
   });
+
+
+  /**
+   * map 변경 버튼
+   * 
+   * 각 버튼 누르면 기존 창 비활성화 및 새로운 창 활성화
+   */
+
+
+  var map = $('.map')
+  console.log(map)
+
+  $(document).ready(function(){
+    $('.map img').eq(0).css('opacity', '1')
+    $('.map img').eq(1).css('opacity', '0')
+  })
+
+
+  $('.map__desc button').click(function(){
+    var mapBtnIndex = $('.map__desc button').index(this);
+    $('.map img').eq(mapBtnIndex).css("opacity", '1');
+    $('.map img').not($('.map img').eq(mapBtnIndex)).css("opacity", '0');
+  });
+
