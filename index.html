@@ -71,7 +71,7 @@
         <a href="#" class="mobile--opener"></a>
         <div class="mobile__gnb">
           <div class="mobile__content">
-            <span class="mo__slogan">Wacle with you!</span>
+            <span class="mo__slogan">NEOTECH with you!</span>
             <ul class="mo__menu">
               <li class="mo__item">
                 <a href="#">
@@ -132,20 +132,23 @@
     <section class="main__hero">
       <div class="black--bg"></div>
       <div class="main__text">
-        <h2 class="company__desc animate__animated animate__fadeInUp animate__delay-.5s">글로벌 비즈니스를 위한 <span>No.1 </span>기업</h2>
-        <p class="company__slogan animate__animated animate__fadeInUp animate__delay-.5s">WACLE GLOBAL WITH YOU!</p>
+        <h2 class="company__desc animate__animated animate__fadeInUp animate__delay-.5s">글로벌 복합소재<span>No.1 </span>기업</h2>
+        <p class="company__slogan animate__animated animate__fadeInUp animate__delay-.5s">NEOCARBON</p>
         <div class="company__promise animate__animated animate__fadeInLeft animate__delay-1s">
-          <p>24년 전통으로 다져진 OO으로</p>
+          <p>24년 전통으로 다져진 노하우로</p>
           <p>최상의 품질의 결과물을 낼 것을 약속드립니다.</p>
         </div> 
       </div>
     </section>
 
     <section class="company__overview">
+      <div class="company__bg">
+        <div class="black--bg"></div>
+      </div>
       <div class="inner">
         <div class="overview__left" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
           <div>
-            <h2 class="overview__title">20년 역사의 <span class="--strong">와클 글로벌</span></h2>
+            <h2 class="overview__title">NEOCARBON <span class="--strong">SUSTAINABLE</span></h2>
             <p class="overview__desc">WACLE은 끊임없는 연구, 개발투자로 처리수 재활용장치등의 <br>
               모델을 50여가지 개발, 공급하며, 매년 매출신장을 보이고 있는 신 벤처기업입니다.
               </p>
@@ -165,121 +168,33 @@
             </div>
           </div>
 
-            <!-- GSAP -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  var startCount1 = { var: 0 };
-  var startCount2 = { var: 0 };
-  var startCount3 = { var: 0 };
-
-  gsap.to(startCount1, {
-    var: 100,
-    duration: 2,
-    ease: "none",
-    onUpdate: () => {
-      document.getElementById("number").innerText = startCount1.var.toFixed();
-    },
-    scrollTrigger: {
-      trigger: ".company__overview",
-      start:"center center",
-      end : "bottom center",
-      toggleActions: "restart pause restart none",      
-    }
-  });
-
-  gsap.to(startCount2, {
-    var: 200,
-    duration: 2,
-    ease: "none",
-    onUpdate: () => {
-      document.getElementById("number2").innerText = startCount2.var.toFixed();
-    },
-    scrollTrigger: {
-      trigger: ".company__overview",
-      start:"center center",
-      end : "bottom center",
-      toggleActions: "restart pause restart none",      
-    }
-  });
-
-  gsap.to(startCount3, {
-    var: 26,
-    duration: 2,
-    ease: "none",
-    onUpdate: () => {
-      document.getElementById("number3").innerText = startCount3.var.toFixed();
-    },
-    scrollTrigger: {
-      trigger: ".company__overview",
-      start:"center center",
-      end : "bottom center",
-      toggleActions: "restart pause restart none",
-    }
-  });
-  </script>
+  
         </div>
         <div class="overview__right" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-          <video src="./img/company__overview_video.mp4 " muted autoplay playsinline loop></video>
+          <div class="content">
+            <a href="#" class="active">CEO 인사말 <span>view more</span></a>
+            <a href="#">오시는 길 <span>view more</span></a>
+            <a href="#">회사 연혁 <span>view more</span></a>
+          </div>
         </div>
       </div> 
+
+         <!-- 회사 소개 -->
+    <!-- <div class="company__introduce" style="border: 1px dashed yellow;">
+      <div class="inner">
+      <h2 class="section__title">OUR BUSINESS</h2>
+          <div class="company__info">
+            <div class="content">
+              <a href="#">CEO 인사말 <span>hi</span><span>hello</span><span>whynot</span> <span class="text">저희 뉴테크에 방문해주셔서 감사합니다. 항상 이런 마음가짐으로 임하고 있습니다.</span></a>
+              <a href="#">오시는 길</a>
+              <a href="#">회사 연혁</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </section>
 
-    <!-- 회사 소개 -->
-    <section class="company__introduce">
-      <div class="inner">
-        <div class="section__top">
-          <div>
-            <h2 class="section__title">COMPANY</h2>
-            <p class="section__desc">회사소개</p>
-          </div>
-          <a class="more__btn" href="#">더 알아보기
-            <span></span>
-          </a>
-        </div>
-        <div class="company__info">
-          <div class="con__box" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-            <div class="content">
-              <h2>CEO 인사말</h2>
-              <div class="content__desc">
-                <p>최고의 품질을 제공하기 위해 항상 노력합니다.</p>
-                <p>여러분의 지속적인 관심과 성원 부탁드립니다.</p>
-              </div>
-              <a href="#" class="read__more">+ read more</a>
-            </div>
-            <div class="black--bg"></div>
-          </div>
-          <div class="con__box" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-            <div class="content">
-              <h2>오시는 길</h2>
-              <div class="content__desc">
-                <p>경기도 파주시  하우4길(상지석동)</p>
-                <p>OO역에서 도보 8분, 236번 버스</p>
-                <p>TEL : 031-842-0876 </p>
-              </div>
-              <a href="#" class="read__more">+ read more</a>
-            </div>
-            <div class="black--bg"></div>
-          </div>
-          <div class="con__box" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-            <div class="content">
-              <h2>연혁</h2>
-              <div class="content__desc">
-                <p>2020년 파주 상지동 설립</p>
-                <p>2022년 핵심 기술 특허</p>
-                <p>2024년 신세대 프로젝트 적용</p>
-              </div>
-              <a href="#" class="read__more">+ read more</a>
-            </div>
-            <div class="black--bg"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+ 
 
     <!-- 제품 소개 -->
     <section class="product__info">
@@ -452,6 +367,63 @@
     AOS.init();
   </script>
 
+            <!-- GSAP -->
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+          
+          
+          <script>
+            gsap.registerPlugin(ScrollTrigger);
+          
+            var startCount1 = { var: 0 };
+            var startCount2 = { var: 0 };
+            var startCount3 = { var: 0 };
+          
+            gsap.to(startCount1, {
+              var: 100,
+              duration: 2,
+              ease: "none",
+              onUpdate: () => {
+                document.getElementById("number").innerText = startCount1.var.toFixed();
+              },
+              scrollTrigger: {
+                trigger: ".company__overview",
+                start:"center center",
+                end : "bottom center",
+                toggleActions: "restart pause restart none",      
+              }
+            });
+          
+            gsap.to(startCount2, {
+              var: 200,
+              duration: 2,
+              ease: "none",
+              onUpdate: () => {
+                document.getElementById("number2").innerText = startCount2.var.toFixed();
+              },
+              scrollTrigger: {
+                trigger: ".company__overview",
+                start:"center center",
+                end : "bottom center",
+                toggleActions: "restart pause restart none",      
+              }
+            });
+          
+            gsap.to(startCount3, {
+              var: 26,
+              duration: 2,
+              ease: "none",
+              onUpdate: () => {
+                document.getElementById("number3").innerText = startCount3.var.toFixed();
+              },
+              scrollTrigger: {
+                trigger: ".company__overview",
+                start:"center center",
+                end : "bottom center",
+                toggleActions: "restart pause restart none",
+              }
+            });
+            </script>
 
 
   <!-- Swiper JS -->
@@ -471,7 +443,7 @@
         },
 
         1024: {
-          slidesPerView : 4,
+          slidesPerView : 3,
         }
       },
     });

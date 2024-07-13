@@ -54,7 +54,7 @@
   left: 0;
   z-index: 2;
   width: 100%;
-  min-height: 840px;
+  height: 100vh;
   background: url(../img/main__image-0.jpg) no-repeat center;
   background-size: 100% 100%;
   transition: background-image 1s ease-in-out;
@@ -66,7 +66,7 @@
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.6;
   z-index: 3;
 }
 .main__hero .main__text {
@@ -116,25 +116,51 @@
 
 .company__overview {
   position: relative;
+  height: 400px;
   width: calc(100% - 120px);
   margin: 0px auto;
   padding-top: 160px;
   padding-bottom: 160px;
+  z-index: 4;
 }
 .company__overview .inner {
   display: flex;
   justify-content: space-between;
 }
+.company__overview .company__bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: url(/img/company__overview.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  background-color: lightgray;
+}
+.company__overview .company__bg .black--bg {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+}
 .company__overview .overview__title {
   font-size: 42px;
   margin-bottom: 60px;
+  color: #fff;
 }
 .company__overview .overview__title .--strong {
-  color: #0051A2;
+  font-weight: 400;
 }
 .company__overview .overview__desc {
   font-size: 18px;
   line-height: 1.5;
+  color: #fff;
 }
 .company__overview .company__record {
   display: flex;
@@ -149,122 +175,142 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 12px;
+  color: #fff;
 }
 .company__overview .company__record .index-1 p, .company__overview .company__record .index-2 p, .company__overview .company__record .index-3 p {
   font-size: 15px;
   font-weight: 400;
+  color: #fff;
 }
 .company__overview .overview__left {
   width: 50%;
   padding: 0 60px;
 }
 .company__overview .overview__right {
-  background-color: gray;
-  width: 40%;
+  width: 50%;
   border-radius: 8px;
   overflow: hidden;
+  padding-top: 40px;
 }
-.company__overview .overview__right video {
+.company__overview .overview__right .content {
+  display: flex;
+  flex-direction: column;
+}
+.company__overview .overview__right .content .active {
+  opacity: 1;
+}
+.company__overview .overview__right .content a {
+  color: #fff;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 40px 0 40px 0px;
+  border-bottom: 1px solid #fff;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+.company__overview .overview__right .content a span {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .company__introduce {
   position: relative;
-  width: calc(100% - 120px);
   margin: 0px auto;
-  padding-top: 100px;
-  padding-bottom: 140px;
+  margin-top: 120px;
 }
 .company__introduce .section__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.company__introduce .section__title {
+  color: #fff;
+  font-size: 28px;
+}
+.company__introduce .product_sec__desc {
+  color: #fff;
+}
 .company__introduce .company__info {
-  margin-top: 72px;
+  padding: 0 40px;
+}
+.company__introduce .company__info a {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  width: 100%;
+  color: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #fff;
+  font-size: 28px;
+  border-bottom: 1px solid #fff;
 }
-.company__introduce .company__info .con__box {
-  height: 356px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-  transition-property: background-size, width;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+.company__introduce .company__info a span {
+  font-size: 16px;
 }
-.company__introduce .company__info .con__box .con__box:hover .content {
-  opacity: 0.5;
-}
-.company__introduce .company__info .con__box .black--bg {
+.company__introduce .company__info .black--bg {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.6;
+  opacity: 0.3;
   z-index: 5;
 }
-.company__introduce .company__info .con__box .content {
-  padding-left: 40px;
+.company__introduce .company__info .content {
+  width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
-.company__introduce .company__info .con__box .content .read__more {
+.company__introduce .company__info .content .read__more {
   z-index: 6;
 }
-.company__introduce .company__info .con__box .content h2 {
-  padding-top: 40px;
+.company__introduce .company__info .content h2 {
   font-weight: bold;
   font-size: 24px;
   color: #fff;
   position: relative;
   z-index: 6;
 }
-.company__introduce .company__info .con__box .content .content__desc {
+.company__introduce .company__info .content .content__desc {
   margin-top: 48px;
   position: relative;
   z-index: 6;
 }
-.company__introduce .company__info .con__box .content .content__desc p {
+.company__introduce .company__info .content .content__desc p {
   font-size: 20px;
   margin-bottom: 12px;
   color: #fff;
   padding-right: 20px;
 }
-.company__introduce .company__info .con__box .read__more {
+.company__introduce .company__info .read__more {
   position: absolute;
   right: 28px;
   bottom: 46px;
   color: #fff;
   font-weight: 700;
 }
-.company__introduce .company__info .con__box .read__more:hover {
+.company__introduce .company__info .read__more:hover {
   color: #0051A2;
 }
-.company__introduce .company__info .con__box:nth-child(1) {
+.company__introduce .con__box:nth-child(1) {
   width: 33.333%;
   background: url(../img/company__info-bg-1.jpg) no-repeat center;
   background-size: cover;
 }
-.company__introduce .company__info .con__box:nth-child(2), .company__introduce .company__info .con__box:nth-child(3) {
+.company__introduce .con__box:nth-child(2), .company__introduce .con__box:nth-child(3) {
   width: 33.333%;
 }
-.company__introduce .company__info .con__box:nth-child(2) {
+.company__introduce .con__box:nth-child(2) {
   background: url(../img/company__info-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
-.company__introduce .company__info .con__box:nth-child(3) {
+.company__introduce .con__box:nth-child(3) {
   background: url(../img/company__info-bg-3.jpg) no-repeat center;
   background-size: cover;
 }
-.company__introduce .company__info .read__more {
+.company__introduce .read__more {
   margin-top: auto;
 }
 
@@ -288,9 +334,8 @@
   width: 100%;
   height: 600px;
   background: url(../img/cs__img.png) no-repeat center;
-  position: relative;
   background-size: cover;
-  z-index: 66;
+  z-index: 3;
 }
 .customer__cs .black--bg {
   position: absolute;
@@ -301,11 +346,13 @@
   background-color: #000;
   opacity: 0.6;
   z-index: 67;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
 }
 .customer__cs .customer__text {
   text-align: left;
   position: relative;
-  z-index: 68;
+  z-index: 69;
   top: 50%;
   transform: translateY(-50%);
   width: calc(100% - 120px);
@@ -316,7 +363,7 @@
 }
 .customer__cs .customer__text h2 {
   font-size: 36px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   line-height: 1.5;
   display: -webkit-box;
@@ -342,7 +389,7 @@
   text-decoration: underline;
   margin: 0px auto;
   padding-top: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .form {
@@ -505,6 +552,7 @@
   width: 100%;
   background-color: #2f2f2f;
   min-height: 245px;
+  padding: 40px 0;
 }
 .footer .inner {
   width: calc(100% - 120px);

@@ -21,6 +21,9 @@ let currentIndex = 1;
 
 
 $(document).ready(function(){
+  $('.main__hero').css("background", `url(./img/main__image-0.jpg)`); 
+
+
   function changeBackgroundImage() {
     $('.main__hero').css("background", `url(./img/main__image-${currentIndex}.jpg)`); 
     $('.main__hero').css("background-size", "cover"); 
