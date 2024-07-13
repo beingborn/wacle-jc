@@ -240,17 +240,36 @@
 
 /* PC 소형 to 노트북 (해상도 1024px ~ 1440px)*/ 
 @media all and (min-width:1024px) and (max-width: 1440px) {
- .sub__wrap .sub__content .sub__inner-1 {width: calc(100% - 120px);}
+ .sub__wrap .sub__content .file__wrapper .sub__inner-1, .file__room .sub__content .sub__inner-1 {width: calc(100% - 120px);}
+ .sub__wrap .sub__content .document__certification .sub__inner-1  {width: calc(100% - 120px);} 
 }
+
+.certification__board .sub__content .sub__inner-1 {width: calc(100% - 120px);}
 
 @media all and (min-width:768px) and (max-width: 1023px){
- .sub__wrap .sub__content .sub__inner-1 {width: calc(100% - 120px);}
- .sub__wrap .sub__content .ceo__message {padding-right: 240px;}
+.sub__wrap .sub__content .document__certification .sub__inner-1  {width: calc(100% - 120px);} 
+.sub__wrap .sub__content .file__wrapper .sub__inner-1 {width: calc(100% - 120px);}
+  .file__library__section .content .info span {font-size: 13px;}
+.sub__wrap .sub__content .ceo__message {padding-right: 240px;}
+
+.file__room .sub__content .sub__inner-1 {width: calc(100% - 120px);}
 }
 
+
+
 @media all and (max-width:767px) {
- .sub__wrap .sub__content .sub__inner-1 {width: calc(100% - 40px);}
+
+
+  .sub__wrap .sub__content .document__certification .sub__inner-1  {width: calc(100% - 40px);} 
+
+ .file__room .sub__content .sub__inner-1 {width: calc(100% - 40px);}
+.file__section .section__desc {font-size: 15px;}
+
+.sub__wrap .sub__content .file__wrapper .sub__inner-1 {width: calc(100% - 120px);}
+
+.file__library__section .content .info span {font-size: 12px;}
  .sub__wrap .sub__content .ceo__message {padding-right: 20px; font-size: 14px;}
+
 
 
 

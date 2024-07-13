@@ -146,6 +146,7 @@
     // width: 100vw;
     // margin-left: calc(-50vw + 50%);
 
+<<<<<<< HEAD
     // .con__box {
     //   min-height: 506px;
     //   position: relative;
@@ -158,6 +159,20 @@
     //   transition-property: background-size, width;
     //   transition-duration: .3s;
     //   transition-timing-function: ease;
+=======
+    .con__box {
+      height: 356px;
+      position: relative;
+      // border-radius: 8px;
+      overflow: hidden;
+      // background-color: #F6F6F6;
+      background-size: cover;
+      position: relative;
+      z-index: 4;
+      transition-property: background-size, width;
+      transition-duration: .2s;
+      transition-timing-function: ease;
+>>>>>>> 9e7f866352b89870e953ce8fd828044e88bb0332
 
     //   .con__box:hover .content {
     //     // transform: translateY(-20px); /* 텍스트 위치 변경 예시 */
