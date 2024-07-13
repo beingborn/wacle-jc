@@ -76,14 +76,9 @@
   z-index: 2;
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
-=======
-  min-height: 840px;
->>>>>>> 9e7f866352b89870e953ce8fd828044e88bb0332
   background: url(../img/main__image-0.jpg) no-repeat center;
   background-size: 100% 100%;
   transition: background-image 1s ease-in-out;
-
 
   .black--bg {
     position: absolute;
@@ -134,41 +129,6 @@
           margin-bottom: 8px;
         }
       }
-    }
-  }
-
-  .scroll {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    color: #fff;
-    z-index: 100;
-    text-align: center;
-    animation: moveBottom 1s infinite alternate;
-
-    @keyframes moveBottom {
-      0% {
-          bottom: 40px;
-      }
-      100% {
-          bottom: 48px;
-      }
-    }
-
-    span {
-      display: block;
-    }
-
-    .text {
-      padding-top: 8px;
-      font-weight: 600;
-    }
-
-    .mouse__icon{
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      background: url(/img/mouse__icon.svg) no-repeat center;
     }
   }
 }

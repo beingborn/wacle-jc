@@ -55,10 +55,6 @@
   z-index: 2;
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
-=======
-  min-height: 840px;
->>>>>>> 9e7f866352b89870e953ce8fd828044e88bb0332
   background: url(../img/main__image-0.jpg) no-repeat center;
   background-size: 100% 100%;
   transition: background-image 1s ease-in-out;
@@ -106,36 +102,6 @@
 }
 .main__hero .main__text .company__promise p:nth-child(1) {
   margin-bottom: 8px;
-}
-.main__hero .scroll {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  color: #fff;
-  z-index: 100;
-  text-align: center;
-  animation: moveBottom 1s infinite alternate;
-}
-@keyframes moveBottom {
-  0% {
-    bottom: 40px;
-  }
-  100% {
-    bottom: 48px;
-  }
-}
-.main__hero .scroll span {
-  display: block;
-}
-.main__hero .scroll .text {
-  padding-top: 8px;
-  font-weight: 600;
-}
-.main__hero .scroll .mouse__icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(/img/mouse__icon.svg) no-repeat center;
 }
 
 .mobile--opener {
@@ -279,21 +245,8 @@
   font-size: 28px;
   border-bottom: 1px solid #fff;
 }
-<<<<<<< HEAD
 .company__introduce .company__info a span {
   font-size: 16px;
-=======
-.company__introduce .company__info .con__box {
-  height: 356px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-  transition-property: background-size, width;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
->>>>>>> 9e7f866352b89870e953ce8fd828044e88bb0332
 }
 .company__introduce .company__info .black--bg {
   position: absolute;
@@ -380,7 +333,8 @@
 .customer__cs {
   width: 100%;
   height: 600px;
-  background: url(../img/cs__img.png) no-repeat center;
+  background: url(../img/cs__img.jpg) no-repeat center;
+  padding: 40px 0;
   background-size: cover;
   z-index: 3;
 }
@@ -410,7 +364,7 @@
 }
 .customer__cs .customer__text h2 {
   font-size: 36px;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   line-height: 1.5;
   display: -webkit-box;
@@ -436,7 +390,7 @@
   text-decoration: underline;
   margin: 0px auto;
   padding-top: 20px;
-  color: #000;
+  color: #fff;
 }
 
 .form {
@@ -593,32 +547,28 @@
 }
 
 .footer {
-  position: relative;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
   width: 100%;
-  background-color: #2f2f2f;
-  min-height: 245px;
-  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 28px 0;
+  z-index: 999;
 }
 .footer .inner {
   width: calc(100% - 120px);
   margin: 0px auto;
   position: relative;
 }
-.footer .inner .footer__desc {
-  padding-top: 48px;
-}
 .footer .inner .footer__desc .name {
   font-weight: bold;
   font-size: 20px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 .footer .inner .footer__desc p {
   font-size: 15px;
   color: #fff;
-  margin-bottom: 8px;
 }
 
 .footer__bottom {
@@ -634,6 +584,27 @@
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.footer__menu {
+  margin-top: 20px;
+}
+.footer__menu a {
+  padding-right: 12px;
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__wrap h2, .footer__wrap p {
+  margin-right: 20px;
+}
+.footer__wrap .name {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 /* PC 소형 to 노트북 (해상도 1024px ~ 1440px)*/
@@ -743,12 +714,16 @@
 }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width: 767px) {
+  .customer__cs {
+    height: 780px;
+  }
   .company__overview .inner {
     display: block;
   }
   .company__overview {
     padding-top: 80px;
     padding-bottom: 120px;
+    height: 600px;
   }
   .company__overview .inner .overview__left, .company__overview .inner .overview__right {
     width: 100%;
@@ -759,8 +734,8 @@
   .company__overview .overview__desc {
     font-size: 15px;
   }
-  .company__overview .inner .overview__right {
-    margin-top: 40px;
+  #wrap .company__overview .overview__right a {
+    font-size: 20px;
   }
   .company__overview .overview__left {
     padding: 0;
@@ -874,6 +849,9 @@
   }
   .footer__bottom .footer__slogan {
     font-size: 24px;
+  }
+  .footer__desc p {
+    margin-bottom: 8px;
   }
 }
 @media all and (max-width: 480px) {
