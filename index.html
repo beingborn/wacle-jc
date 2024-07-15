@@ -1,102 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wacle global</title>
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
 
     <!-- 스와이퍼 CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- 애니메이트 CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- aos CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
     </style>
-</head>
-<body>
-   <div id="wrap">
-    <header class="header">
-      <div class="header__wrap">
-        <h1 class="logo">
-          <img src="/img/transparent__logo.svg" alt="홈페이지 메인로고">
-        </h1>
-        <div class="gnb">
-          <ul class="gnb__menu">
-            <li class="gnb__item">
-              <a href="#">회사소개</a>
-              <ul class="sub__menu">
-                <li><a href="./sub1-1.html">CEO 인사말</a></li>
-                <li><a href="./sub1-4.html">조직도</a></li>
-                <li><a href="./sub1-3.html">인증현황</a></li>
-                <li><a href="./sub1-2.html">오시는 길</a></li>
-              </ul>
-            </li>
-            <li class="gnb__item">
-              <a href="#">제품소개</a>
-              <ul class="sub__menu">
-                <li><a href="./sub2-1.html">수중연소</a></li>
-                <li><a href="#">양방향 여과 장치</a></li>
-                <li><a href="#">폐수 무방류</a></li>
-                <li><a href="#">제품 4</a></li>
-                <li><a href="#">제품 5</a></li>
-                <li><a href="#">제품 6</a></li>
-                <li><a href="#">제품 7</a></li>
-              </ul>
-            </li>
-            <li class="gnb__item">
-              <a href="#">자료실</a>
-              <ul class="sub__menu">
-                <li><a href="./sub3-1.html">납품실적</a></li>
-                <li><a href="#">기술자료</a></li>
-                <li><a href="./sub3-3.html">판매조직</a></li>
-              </ul>
-            </li>
-            <li class="gnb__item">
-              <a href="#">고객지원</a>
-              <ul class="sub__menu">
-                <li><a href="./sub4-1.html">고객문의</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <a href="#" class="mobile--opener"></a>
-        <div class="mobile__gnb">
-          <div class="mobile__content">
-            <span class="mo__slogan">NEOTECH with you!</span>
-            <ul class="mo__menu">
-              <li class="mo__item">
-                <a href="#">
-                  회사소개
-                  <span class="arrow--"></span>
-                </a>
-                <ul class="mo__sub">
-                  <li>
-                    <a href="#">CEO 인사말</a>
-                  </li>
-                  <li>
-                    <a href="#">오시는 길</a>
-                  </li>
-                  <li>
-                    <a href="#">연혁</a>
-                  </li>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header">
+        <div class="header__wrap">
+          <h1
+            class="logo"
+            style="cursor: pointer"
+            onclick="location.href='index.html'"
+          >
+            <img src="img/transparent__logo.svg" alt="홈페이지 메인로고" />
+          </h1>
+          <div class="gnb">
+            <ul class="gnb__menu">
+              <li class="gnb__item">
+                <a href="#">회사소개</a>
+                <ul class="sub__menu">
+                  <li><a href="./sub1-1.html">CEO 인사말</a></li>
+                  <li><a href="./sub1-4.html">조직도</a></li>
+                  <li><a href="./sub1-3.html">인증현황</a></li>
+                  <li><a href="./sub1-2.html">오시는 길</a></li>
                 </ul>
               </li>
-              <li class="mo__item">
-                <a href="#">
-                  제품소개
-                  <span class="arrow--"></span>
-                </a>
-                <ul class="mo__sub">
-                  <li><a href="#">수중연소</a></li>
+              <li class="gnb__item">
+                <a href="#">제품소개</a>
+                <ul class="sub__menu">
+                  <li><a href="./sub2-1.html">수중연소</a></li>
                   <li><a href="#">양방향 여과 장치</a></li>
                   <li><a href="#">폐수 무방류</a></li>
                   <li><a href="#">제품 4</a></li>
@@ -105,80 +61,161 @@
                   <li><a href="#">제품 7</a></li>
                 </ul>
               </li>
-              <li class="mo__item">
-                <a href="#">
-                  자료실
-                  <span class="arrow--"></span>
-                </a>
-                <ul class="mo__sub">
-                  <li><a href="#">인증현황</a></li>
+              <li class="gnb__item">
+                <a href="#">자료실</a>
+                <ul class="sub__menu">
+                  <li><a href="./sub3-1.html">납품실적</a></li>
+                  <li><a href="#">기술자료</a></li>
+                  <li><a href="./sub3-3.html">판매조직</a></li>
                 </ul>
               </li>
-              <li class="mo__item">
-                <a href="#">
-                  고객지원
-                  <span class="arrow--"></span>
-                </a>
-                <ul class="mo__sub">
-                  <li><a href="#">고객문의</a></li>
+              <li class="gnb__item">
+                <a href="#">고객지원</a>
+                <ul class="sub__menu">
+                  <li><a href="./sub4-1.html">고객문의</a></li>
                 </ul>
               </li>
             </ul>
           </div>
+          <a href="#" class="mobile--opener"></a>
+          <div class="mobile__gnb">
+            <div class="mobile__content">
+              <span class="mo__slogan">NEOTECH with you!</span>
+              <ul class="mo__menu">
+                <li class="mo__item">
+                  <a href="#">
+                    회사소개
+                    <span class="arrow--"></span>
+                  </a>
+                  <ul class="mo__sub">
+                    <li>
+                      <a href="#">CEO 인사말</a>
+                    </li>
+                    <li>
+                      <a href="#">오시는 길</a>
+                    </li>
+                    <li>
+                      <a href="#">연혁</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mo__item">
+                  <a href="#">
+                    제품소개
+                    <span class="arrow--"></span>
+                  </a>
+                  <ul class="mo__sub">
+                    <li><a href="#">수중연소</a></li>
+                    <li><a href="#">양방향 여과 장치</a></li>
+                    <li><a href="#">폐수 무방류</a></li>
+                    <li><a href="#">제품 4</a></li>
+                    <li><a href="#">제품 5</a></li>
+                    <li><a href="#">제품 6</a></li>
+                    <li><a href="#">제품 7</a></li>
+                  </ul>
+                </li>
+                <li class="mo__item">
+                  <a href="#">
+                    자료실
+                    <span class="arrow--"></span>
+                  </a>
+                  <ul class="mo__sub">
+                    <li><a href="#">인증현황</a></li>
+                  </ul>
+                </li>
+                <li class="mo__item">
+                  <a href="#">
+                    고객지원
+                    <span class="arrow--"></span>
+                  </a>
+                  <ul class="mo__sub">
+                    <li><a href="#">고객문의</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
-    <!-- 메인 비주얼 영역  -->
-    <section class="main__hero">
-      <div class="black--bg"></div>
-      <div class="main__text">
-        <h2 class="company__desc animate__animated animate__fadeInUp animate__delay-.5s">글로벌 복합소재 <span>No.1</span> 기업</h2>
-        <p class="company__slogan animate__animated animate__fadeInUp animate__delay-.5s">NEOCARBON</p>
-        <div class="company__promise animate__animated animate__fadeInLeft animate__delay-1s">
-          <p>24년 전통으로 다져진 노하우로</p>
-          <p>최상의 품질의 결과물을 낼 것을 약속드립니다.</p>
-        </div> 
-      </div>
-    </section>
-
-    <section class="company__overview">
-      <div class="company__bg">
+      </header>
+      <!-- 메인 비주얼 영역  -->
+      <section class="main__hero">
         <div class="black--bg"></div>
-      </div>
-      <div class="inner">
-        <div class="overview__left" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-          <div>
-            <h2 class="overview__title">NEOCARBON <span class="--strong">SUSTAINABLE</span></h2>
-            <p class="overview__desc">NEOCARBON은 복합소재를 이용하여 모델 50여가지의 상품을 매년 개발, 공급해 매출 신장을 이뤄내고 있습니다.  </p>
-          </div>
-          <div class="company__record">
-            <div class="index-1">
-              <h2><span class="counter" id="number">0</span>k</h2>
-              <p>최고 투자율
-            </div>
-            <div class="index-2">
-              <h2><span class="counter" id="number2">0</span>만명</h2>
-              <p>15% 감소</p>
-            </div>
-            <div class="index-3">
-              <h2><span class="counter" id="number3">0</span>% 멸균</h2>
-              <p>35명</p>
-            </div>
-          </div>
-
-  
-        </div>
-        <div class="overview__right" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-          <div class="content">
-            <a href="/sub1-1.html" class="active">CEO 인사말 <span>view more</span></a>
-            <a href="/sub1-2.html">오시는 길 <span>view more</span></a>
-            <a href="#">회사 연혁 <span>view more</span></a>
+        <div class="main__text">
+          <h2
+            class="company__desc animate__animated animate__fadeInUp animate__delay-.5s"
+          >
+            글로벌 복합소재 <span>No.1</span> 기업
+          </h2>
+          <p
+            class="company__slogan animate__animated animate__fadeInUp animate__delay-.5s"
+          >
+            NEOCARBON
+          </p>
+          <div
+            class="company__promise animate__animated animate__fadeInLeft animate__delay-1s"
+          >
+            <p>24년 전통으로 다져진 노하우로</p>
+            <p>최상의 품질의 결과물을 낼 것을 약속드립니다.</p>
           </div>
         </div>
-      </div> 
+      </section>
 
-         <!-- 회사 소개 -->
-    <!-- <div class="company__introduce" style="border: 1px dashed yellow;">
+      <section class="company__overview">
+        <div class="company__bg">
+          <div class="black--bg"></div>
+        </div>
+        <div class="inner">
+          <div
+            class="overview__left"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div>
+              <h2 class="overview__title">
+                NEOCARBON <span class="--strong">SUSTAINABLE</span>
+              </h2>
+              <p class="overview__desc">
+                NEOCARBON은 복합소재를 이용하여 모델 50여가지의 상품을 매년
+                개발, 공급해 매출 신장을 이뤄내고 있습니다.
+              </p>
+            </div>
+            <div class="company__record">
+              <div class="index-1">
+                <h2><span class="counter" id="number">0</span>k</h2>
+                <p>최고 투자율</p>
+              </div>
+
+              <div class="index-2">
+                <h2><span class="counter" id="number2">0</span>만명</h2>
+                <p>15% 감소</p>
+              </div>
+              <div class="index-3">
+                <h2><span class="counter" id="number3">0</span>% 멸균</h2>
+                <p>35명</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="overview__right"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div class="content">
+              <a href="/sub1-1.html" class="active"
+                >CEO 인사말 <span>view more</span></a
+              >
+              <a href="/sub1-2.html">오시는 길 <span>view more</span></a>
+              <a href="#">회사 연혁 <span>view more</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 회사 소개 -->
+        <!-- <div class="company__introduce" style="border: 1px dashed yellow;">
       <div class="inner">
       <h2 class="section__title">OUR BUSINESS</h2>
           <div class="company__info">
@@ -190,265 +227,347 @@
           </div>
         </div>
       </div> -->
-    </section>
+      </section>
 
- 
+      <!-- 제품 소개 -->
+      <section class="product__info">
+        <div class="inner">
+          <h2 class="section__title">PRODUCT INFO</h2>
+          <p class="product_sec__desc">
+            건강한 물을 위해 새로운 기술에 늘 최선을 다하고 있습니다.
+          </p>
 
-    <!-- 제품 소개 -->
-    <section class="product__info">
-      <div class="inner">
-        <h2 class="section__title">PRODUCT INFO</h2>
-        <p class="product_sec__desc">건강한 물을 위해 새로운 기술에 늘 최선을 다하고 있습니다.</p>
-
-        <div class="product__wrap" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-          <div class="swiper productSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>수중 원소식 기계1</h2>
-                    <p>최신 원료의 기술 제작</p>
+          <div
+            class="product__wrap"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div class="swiper productSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-1.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>수중 원소식 기계1</h2>
+                      <p>최신 원료의 기술 제작</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-2.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>재활용 연소식 기계 2</h2>
+                      <p>OO기술 탑재 연료</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-1.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>수중 원소식 기계1</h2>
+                      <p>최신 원료의 기술 제작</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-2.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>수중 원소식 기계1</h2>
+                      <p>최신 원료의 기술 제작</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-1.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>수중 원소식 기계1</h2>
+                      <p>최신 원료의 기술 제작</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-2.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>수중 원소식 기계1</h2>
+                      <p>최신 원료의 기술 제작</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__content">
+                    <img
+                      src="./img/swiper__product-1.png"
+                      alt="스와이퍼 1번 상품"
+                    />
+                    <div class="product__sub">
+                      <h2>수중 원소식 기계1</h2>
+                      <p>최신 원료의 기술 제작</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>재활용 연소식 기계 2</h2>
-                    <p>OO기술 탑재 연료</p>
-                  </div>
-                </div>
+              <div class="btn__group">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>수중 원소식 기계1</h2>
-                    <p>최신 원료의 기술 제작</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>수중 원소식 기계1</h2>
-                    <p>최신 원료의 기술 제작</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>수중 원소식 기계1</h2>
-                    <p>최신 원료의 기술 제작</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-2.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>수중 원소식 기계1</h2>
-                    <p>최신 원료의 기술 제작</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__content">
-                  <img src="./img/swiper__product-1.png" alt="스와이퍼 1번 상품">
-                  <div class="product__sub">
-                    <h2>수중 원소식 기계1</h2>
-                    <p>최신 원료의 기술 제작</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="btn__group">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- 고객 지원 -->
-    <section class="customer__cs" data-aos="fade-up"  data-aos-anchor-placement="top-bottom"  data-aos-easing="linear" data-aos-duration="500">
-      <div class="customer__text">
-        <div>
-          <h2>다양하고 골치아픈 민원들을 
-            <br>
-          와클 글로벌에서 해결해드립니다.</h2>
-          <!-- <a href="#" class="apply__btn">상담신청</a> -->
-          <button type="button" class="apply__tel" >TEL : 031-841-0876</button>
-        </div>
+      </section>
+      <!-- 고객 지원 -->
+      <section
+        class="customer__cs"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+      >
+        <div class="customer__text">
+          <div>
+            <h2>
+              다양하고 골치아픈 민원들을
+              <br />
+              와클 글로벌에서 해결해드립니다.
+            </h2>
+            <!-- <a href="#" class="apply__btn">상담신청</a> -->
+            <button type="button" class="apply__tel">TEL : 031-841-0876</button>
+          </div>
           <!-- 신청 폼 -->
           <form class="form" action="">
             <div class="form__left">
-                <div class="cs__form form--must">
-                  <label for="name">회사명</label>
-                  <input type="text" name="company" id="company" placeholder="회사명" class="form-main" required="">
-                </div>
-                <div class="cs__form form--must">
-                  <label for="email">이메일</label>
-                  <input type="email" name="email" id="email" placeholder="이메일 주소" class="form-main" required="">
-                </div>      
+              <div class="cs__form form--must">
+                <label for="name">회사명</label>
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  placeholder="회사명"
+                  class="form-main"
+                  required=""
+                />
+              </div>
+              <div class="cs__form form--must">
+                <label for="email">이메일</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="이메일 주소"
+                  class="form-main"
+                  required=""
+                />
+              </div>
               <div class="cs__form form--must">
                 <label for="name">이름</label>
-                <input type="text" name="phone" id="name" placeholder="이름" class="form-main" required="">
+                <input
+                  type="text"
+                  name="phone"
+                  id="name"
+                  placeholder="이름"
+                  class="form-main"
+                  required=""
+                />
               </div>
             </div>
             <div class="form__right">
               <div class="cs__form form--must">
                 <label for="name">연락처</label>
-                <input type="text" name="phone" id="phone" placeholder="연락처" class="form-main" required="">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="연락처"
+                  class="form-main"
+                  required=""
+                />
               </div>
               <div class="cs__form form--must">
                 <label for="name">제목</label>
-                <input type="text" name="phone" id="title" placeholder="제목" class="form-main" required="">
+                <input
+                  type="text"
+                  name="phone"
+                  id="title"
+                  placeholder="제목"
+                  class="form-main"
+                  required=""
+                />
               </div>
               <div class="cs__form form--must">
                 <label for="name">내용</label>
-                <input type="text" name="phone" id="phone" placeholder="내용" class="form-main" required="">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="내용"
+                  class="form-main"
+                  required=""
+                />
               </div>
             </div>
 
             <div class="cs__bottom">
               <div class="personal">
                 <label for="personal"></label>
-                <input type="checkbox" value="개인정보 수집 동의" class="personal-check">
+                <input
+                  type="checkbox"
+                  value="개인정보 수집 동의"
+                  class="personal-check"
+                />
                 <span>개인정보 수집에 동의합니다. (필수)</span>
               </div>
               <div class="form__submit">
-                <input type="submit" value="제출하기" class="form--complete">
+                <input type="submit" value="제출하기" class="form--complete" />
               </div>
             </div>
           </form>
+        </div>
+        <div class="black--bg"></div>
+        <!-- footer -->
+        <footer class="footer">
+          <div class="inner">
+            <div class="footer__desc">
+              <div class="footer__wrap">
+                <h2 class="name">NEOTECH</h2>
+                <p class="info">
+                  <b>회사 위치</b> : 경기도 파주시 상지선로 296 7길
+                </p>
+                <p class="business"><b>사업자 등록번호</b> : 1709210-3014576</p>
+                <p class="when__build"><b>회사 설립</b> : 2017년도 08월 17일</p>
+              </div>
 
-        
-      </div>
-      <div class="black--bg"></div>
-         <!-- footer -->
-     <footer class="footer">
-      <div class="inner">
-        <div class="footer__desc">
-          <div class="footer__wrap">
-            <h2 class="name">NEOTECH</h2>
-            <p class="info"><b>회사 위치</b> : 경기도 파주시 상지선로 296 7길</p>
-            <p class="business"><b>사업자 등록번호</b> : 1709210-3014576</p>
-            <p class="when__build"><b>회사 설립</b> : 2017년도 08월 17일</p>
-          </div>
-
-          <!-- <div class="footer__menu">
+              <!-- <div class="footer__menu">
             <a href="#">개인정보 처리방침</a>
             <a href="#">이용약관</a>
             <a href="#">추가 정책 안내</a>
           </div> -->
-        </div>
-     
-      </div>
-     </footer>
-    </section>
- 
-  </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- AOS INIT -->
-  <script>
-    AOS.init();
-  </script>
+    <!-- AOS INIT -->
+    <script>
+      AOS.init();
+    </script>
 
-            <!-- GSAP -->
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-          
-          
-          <script>
-            gsap.registerPlugin(ScrollTrigger);
-          
-            var startCount1 = { var: 0 };
-            var startCount2 = { var: 0 };
-            var startCount3 = { var: 0 };
-          
-            gsap.to(startCount1, {
-              var: 100,
-              duration: 2,
-              ease: "none",
-              onUpdate: () => {
-                document.getElementById("number").innerText = startCount1.var.toFixed();
-              },
-              scrollTrigger: {
-                trigger: ".company__overview",
-                start:"center center",
-                end : "bottom center",
-                toggleActions: "restart pause restart none",      
-              }
-            });
-          
-            gsap.to(startCount2, {
-              var: 200,
-              duration: 2,
-              ease: "none",
-              onUpdate: () => {
-                document.getElementById("number2").innerText = startCount2.var.toFixed();
-              },
-              scrollTrigger: {
-                trigger: ".company__overview",
-                start:"center center",
-                end : "bottom center",
-                toggleActions: "restart pause restart none",      
-              }
-            });
-          
-            gsap.to(startCount3, {
-              var: 26,
-              duration: 2,
-              ease: "none",
-              onUpdate: () => {
-                document.getElementById("number3").innerText = startCount3.var.toFixed();
-              },
-              scrollTrigger: {
-                trigger: ".company__overview",
-                start:"center center",
-                end : "bottom center",
-                toggleActions: "restart pause restart none",
-              }
-            });
-            </script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".productSwiper", {
-      slidesPerView: 1,
-      // spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints : {
-        767: {
-          slidesPerView : 3,
+      var startCount1 = { var: 0 };
+      var startCount2 = { var: 0 };
+      var startCount3 = { var: 0 };
+
+      gsap.to(startCount1, {
+        var: 100,
+        duration: 2,
+        ease: "none",
+        onUpdate: () => {
+          document.getElementById("number").innerText =
+            startCount1.var.toFixed();
         },
+        scrollTrigger: {
+          trigger: ".company__overview",
+          start: "center center",
+          end: "bottom center",
+          toggleActions: "restart pause restart none",
+        },
+      });
 
-        1024: {
-          slidesPerView : 3,
-        }
-      },
-    });
-  </script>
+      gsap.to(startCount2, {
+        var: 200,
+        duration: 2,
+        ease: "none",
+        onUpdate: () => {
+          document.getElementById("number2").innerText =
+            startCount2.var.toFixed();
+        },
+        scrollTrigger: {
+          trigger: ".company__overview",
+          start: "center center",
+          end: "bottom center",
+          toggleActions: "restart pause restart none",
+        },
+      });
 
-  
+      gsap.to(startCount3, {
+        var: 26,
+        duration: 2,
+        ease: "none",
+        onUpdate: () => {
+          document.getElementById("number3").innerText =
+            startCount3.var.toFixed();
+        },
+        scrollTrigger: {
+          trigger: ".company__overview",
+          start: "center center",
+          end: "bottom center",
+          toggleActions: "restart pause restart none",
+        },
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".productSwiper", {
+        slidesPerView: 1,
+        // spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 3,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
     <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/default.js"></script>
-</body>
+  </body>
 </html>
