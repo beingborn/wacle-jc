@@ -45,7 +45,7 @@
   color: #000;
 }
 .header .gnb__menu li .sub__menu li a:hover {
-  color: #0051A2;
+  color: #ed1c24;
 }
 
 .main__hero {
@@ -77,7 +77,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.main__hero .main__text h2, .main__hero .main__text p {
+.main__hero .main__text h2,
+.main__hero .main__text p {
   color: #fff;
 }
 .main__hero .main__text .company__slogan {
@@ -381,6 +382,7 @@
   padding: 40px 0;
   background-size: cover;
   z-index: 3;
+  position: relative;
 }
 .customer__cs .black--bg {
   position: absolute;
@@ -1061,7 +1063,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.sub__hero .main__text h2, .sub__hero .main__text p {
+.sub__hero .main__text h2,
+.sub__hero .main__text p {
   color: #fff;
 }
 .sub__hero .main__text .sub__slogan {
@@ -1076,31 +1079,32 @@
 }
 
 .sub__1 {
-  background: url(/img/sub__main-1.jpg) no-repeat center;
+  background: url(../img/sub__main-1.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__1-2 {
-  background: url(/img/location_sub-1.jpg) no-repeat center;
+  background: url(../img/location_sub-1.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__1-3 {
-  background: url(/img/sub__certificate.jpg) no-repeat center;
+  background: url(../img/sub__certificate.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__1-4 {
-  background: url(/img/sub__businessgroup.jpg) no-repeat center;
+  background: url(../img/sub__businessgroup.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__2-1 {
-  background: url(/img/company__info-bg-3.jpg) no-repeat center;
+  background: url(../img/company__info-bg-3.jpg) no-repeat center;
   background-size: cover;
 }
 
-.sub__3-1, .sub__3-3 {
+.sub__3-1,
+.sub__3-3 {
   background: url(../img/sub__file.jpg) no-repeat center;
   background-size: cover;
 }
@@ -1169,9 +1173,12 @@
   padding-right: 450px;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   font-weight: 600;
   opacity: 0.9;
+}
+.sub__content .ceo__message p {
+  font-size: 15px;
 }
 .sub__content .map {
   display: block;
@@ -1208,7 +1215,7 @@
 }
 .map__desc button:hover {
   color: #fff;
-  background-color: #0051A2;
+  background-color: #0051a2;
   border: 0;
 }
 .map__desc h2 {
@@ -1236,7 +1243,7 @@
   height: 120px;
   line-height: 120px;
   border-radius: 50%;
-  background-color: #0051A2;
+  background-color: #0051a2;
   color: #fff;
   font-size: 32px;
   display: block;
@@ -1252,7 +1259,7 @@
 .business__section .depth__wrap .depth__header {
   text-align: center;
   padding: 8px 0;
-  background-color: #0051A2;
+  background-color: #0051a2;
   color: #fff;
   font-weight: bold;
 }
@@ -1432,15 +1439,18 @@
   text-align: left;
 }
 
-.table td:first-child, .table th:first-child {
+.table td:first-child,
+.table th:first-child {
   width: 10%;
 }
 
-.table td:nth-child(3), .table th:nth-child(3) {
+.table td:nth-child(3),
+.table th:nth-child(3) {
   width: 30%;
 }
 
-.table td:nth-child(5), .table th:nth-child(4) {
+.table td:nth-child(5),
+.table th:nth-child(4) {
   width: 15%;
 }
 
@@ -1474,7 +1484,7 @@
   font-weight: bold;
 }
 .pagination a:hover {
-  color: #0051A2;
+  color: #0051a2;
 }
 
 .world__map__isolated {
@@ -1523,7 +1533,7 @@
   color: #000;
 }
 .sub__wrap .cs__bottom .form--complete {
-  background-color: #0051A2;
+  background-color: #0051a2;
 }
 
 .certification__board .sub__content .sub__inner-1 {

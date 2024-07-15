@@ -58,7 +58,7 @@ $(document).ready(function () {
       "background-color": "#fff",
     });
     $(".gnb__menu .gnb__item > a").css("color", "#000");
-    $(".logo img").attr("src", "../img/main__logo.svg");
+    $(".logo img").attr("src", "img/main__logo.svg");
 
     // 높이 애니메이션이 끝난 후 서브메뉴를 보이게 함
     setTimeout(() => {
@@ -77,7 +77,7 @@ $(document).ready(function () {
       "background-color": "transparent",
     });
     $(".gnb__menu .gnb__item > a").css("color", "#fff");
-    $(".logo img").attr("src", "../img/transparent__logo.svg");
+    $(".logo img").attr("src", "img/transparent__logo.svg");
 
     $(".sub__menu").css({
       display: "none",
