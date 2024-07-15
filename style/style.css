@@ -43,6 +43,7 @@
   white-space: nowrap;
   margin-bottom: 24px;
   color: #000;
+  font-weight: 500;
 }
 .header .gnb__menu li .sub__menu li a:hover {
   color: #ed1c24;
