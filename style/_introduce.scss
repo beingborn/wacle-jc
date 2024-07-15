@@ -1,4 +1,3 @@
-
 .company__overview {
   position: relative;
   height: 400px;
@@ -37,8 +36,6 @@
     }
   }
 
-
-
   .overview__title {
     font-size: 42px;
     margin-bottom: 60px;
@@ -53,7 +50,6 @@
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
-
   }
 
   .company__record {
@@ -62,22 +58,23 @@
     justify-content: space-between;
     max-width: 600px;
 
-    .index-1, .index-2, .index-3 {
+    .index-1,
+    .index-2,
+    .index-3 {
       text-align: center;
 
-     h2 {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 12px;
-      color: #fff;
-     }
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: #fff;
+      }
 
-     p {
-      font-size: 15px;
-      font-weight: 400;
-      color: #fff;
-
-     }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+      }
     }
   }
 
@@ -96,7 +93,6 @@
       display: flex;
       flex-direction: column;
 
-
       .active {
         opacity: 1;
       }
@@ -111,7 +107,7 @@
         display: flex;
         justify-content: space-between;
         opacity: 0.5;
-        transition: all .5s;
+        transition: all 0.5s;
 
         span {
           font-size: 20px;
@@ -119,159 +115,126 @@
         }
       }
     }
-
-    
   }
 }
 
 .company__introduce {
   position: relative;
-  // width: calc(100% - 120px);
   margin: 0px auto;
   margin-top: 120px;
-  // padding-top: 100px;
-  // padding-bottom: 140px;
 
-  .section__top {display:flex; align-items: center; justify-content: space-between;}
+  .section__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-  .section__title {color: #fff; font-size: 28px;}
-  .product_sec__desc {color: #fff;}
-  
+  .section__title {
+    color: #fff;
+    font-size: 28px;
+  }
+  .product_sec__desc {
+    color: #fff;
+  }
 
   .company__info {
     padding: 0 40px;
-    // margin-top: 72px;
-    // display: flex;
-    // justify-content: space-between;
-    // overflow: hidden;
-    // width: 100vw;
-    // margin-left: calc(-50vw + 50%);
 
-    // .con__box {
-    //   min-height: 506px;
-    //   position: relative;
-    //   // border-radius: 8px;
-    //   overflow: hidden;
-    //   // background-color: #F6F6F6;
-    //   background-size: cover;
-    //   position: relative;
-    //   z-index: 4;
-    //   transition-property: background-size, width;
-    //   transition-duration: .3s;
-    //   transition-timing-function: ease;
+    a {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: #fff;
+      padding: 40px 0;
+      border-top: 1px solid #fff;
+      font-size: 28px;
+      border-bottom: 1px solid #fff;
 
-    //   .con__box:hover .content {
-    //     // transform: translateY(-20px); /* 텍스트 위치 변경 예시 */
-    //     opacity: 0.5;
-    //   }
-      a  {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        color: #fff;
-        padding: 40px 0;
-        border-top: 1px solid #fff;
-        font-size: 28px;
-        border-bottom: 1px solid #fff;
-
-        span {font-size: 16px;}
+      span {
+        font-size: 16px;
       }
+    }
 
+    .black--bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.3;
+      z-index: 5;
+    }
 
-      .black--bg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        opacity: 0.3;
-        z-index: 5;
-      }
-
-      .content {
-        width: 100%;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // z-index: 6;
-
-
-        .read__more {
-          z-index: 6;
-        }
-
-        h2 {
-          // padding-top: 40px;
-          font-weight: bold;
-          font-size: 24px;
-          color: #fff;
-          position: relative;
-          z-index: 6;
-        }
-
-        .content__desc {
-          margin-top: 48px;
-          position: relative;
-          z-index: 6;
-
-          p {
-            font-size: 20px;
-            margin-bottom: 12px;
-            color: #fff;
-            padding-right: 20px;
-
-          }
-        }
-      }
+    .content {
+      width: 100%;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
 
       .read__more {
-        position: absolute;
-        right: 28px;
-        bottom: 46px;
-        color: #fff;
-        font-weight: 700;
+        z-index: 6;
+      }
 
-        &:hover {
-          color: #0051A2;
+      h2 {
+        font-weight: bold;
+        font-size: 24px;
+        color: #fff;
+        position: relative;
+        z-index: 6;
+      }
+
+      .content__desc {
+        margin-top: 48px;
+        position: relative;
+        z-index: 6;
+
+        p {
+          font-size: 20px;
+          margin-bottom: 12px;
+          color: #fff;
+          padding-right: 20px;
         }
       }
-    }
-
-
-
- 
-    .con__box:nth-child(1){
-      // width: calc(33.3% - 20px);
-      width: 33.333%;
-      background: url(../img/company__info-bg-1.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    .con__box:nth-child(2), .con__box:nth-child(3) {
-      width: 33.333%;
-      // width: calc(33.3% - 20px);
-
-    }
-
-    .con__box:nth-child(2) {
-      background: url(../img/company__info-bg-2.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    .con__box:nth-child(3) {
-      background: url(../img/company__info-bg-3.jpg) no-repeat center;
-      background-size: cover;
     }
 
     .read__more {
-      margin-top: auto;
+      position: absolute;
+      right: 28px;
+      bottom: 46px;
+      color: #fff;
+      font-weight: 700;
+
+      &:hover {
+        color: #0051a2;
+      }
     }
   }
 
+  .con__box:nth-child(1) {
+    width: 33.333%;
+    background: url(../img/company__info-bg-1.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .con__box:nth-child(2),
+  .con__box:nth-child(3) {
+    width: 33.333%;
+  }
+
+  .con__box:nth-child(2) {
+    background: url(../img/company__info-bg-2.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .con__box:nth-child(3) {
+    background: url(../img/company__info-bg-3.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .read__more {
+    margin-top: auto;
+  }
+}
 
 .product__info {
   width: calc(100% - 120px);
@@ -283,8 +246,6 @@
     font-size: 30px;
     color: #cccccc;
     font-weight: bold;
-
-
   }
 
   .product__wrap {
@@ -296,9 +257,8 @@
 .customer__cs {
   width: 100%;
   height: 600px;
-  background: url(../img/cs__img.jpg) no-repeat center;
+  background: url(img/cs__img.jpg) no-repeat center;
   padding: 40px 0;
-  // position: relative;
   background-size: cover;
   z-index: 3;
 
@@ -313,7 +273,6 @@
     z-index: 67;
     backdrop-filter: blur(50px);
   }
-  
 
   .customer__text {
     text-align: left;
@@ -328,14 +287,13 @@
     justify-content: space-between;
     align-items: center;
 
-    h2{
+    h2 {
       font-size: 36px;
       color: #fff;
       font-weight: bold;
       line-height: 1.5;
-      // word-break: break-word;
       display: -webkit-box;
-      -webkit-line-clamp: 2; // 원하는 라인수
+      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       white-space: nowrap;
     }
@@ -344,13 +302,12 @@
       text-align: center;
       margin-top: 28px;
       display: inline-block;
-      // width: 200px;
       padding: 0 20px;
       height: 48px;
       line-height: 48px;
       color: #fff;
       font-weight: bold;
-      background-color: #0051A2;
+      background-color: #0051a2;
       border-radius: 30px;
     }
 
@@ -358,14 +315,12 @@
       background: transparent;
       border: 0;
       text-decoration: underline;
-      // display: block;
       margin: 0px auto;
       padding-top: 20px;
       color: #fff;
     }
   }
 }
-
 
 .form {
   width: 640px;
@@ -402,7 +357,9 @@
     justify-content: space-between;
 
     .personal {
-      span { color: #fff ;}
+      span {
+        color: #fff;
+      }
     }
 
     .form--complete {
@@ -414,10 +371,10 @@
       color: #fff;
       border-radius: 4px;
       cursor: pointer;
-      transition: all .5s;
+      transition: all 0.5s;
 
       &:hover {
-        background-color: #0051A2;
+        background-color: #0051a2;
       }
     }
   }
