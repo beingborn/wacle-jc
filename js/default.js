@@ -184,3 +184,15 @@ let moBtnIndex;
     $('.map img').not($('.map img').eq(mapBtnIndex)).css("opacity", '0');
   });
 
+/**
+ * 
+ * 모바일 content
+ * 
+ * 
+ * 
+ */
+
+$('.company__overview .overview__right .content a').mouseenter(function(){
+  $(this).addClass('active')
+  $('.company__overview .overview__right .content a').not($(this)).removeClass('active')
+})

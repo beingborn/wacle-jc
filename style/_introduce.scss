@@ -111,6 +111,7 @@
         display: flex;
         justify-content: space-between;
         opacity: 0.5;
+        transition: all .5s;
 
         span {
           font-size: 20px;

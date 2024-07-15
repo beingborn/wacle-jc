@@ -209,6 +209,7 @@
   display: flex;
   justify-content: space-between;
   opacity: 0.5;
+  transition: all 0.5s;
 }
 .company__overview .overview__right .content a span {
   font-size: 20px;
@@ -1026,27 +1027,27 @@
 }
 
 .sub__1 {
-  background: url(../img/sub__main-1.jpg) no-repeat center;
+  background: url(/img/sub__main-1.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__1-2 {
-  background: url(../img/loacation_sub-1.jpg) no-repeat center;
+  background: url(/img/location_sub-1.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__1-3 {
-  background: url(../img/sub__certificate.jpg) no-repeat center;
+  background: url(/img/sub__certificate.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__1-4 {
-  background: url(../img/sub__businessgroup.jpg) no-repeat center;
+  background: url(/img/sub__businessgroup.jpg) no-repeat center;
   background-size: cover;
 }
 
 .sub__2-1 {
-  background: url(../img/company__info-bg-3.jpg) no-repeat center;
+  background: url(/img/company__info-bg-3.jpg) no-repeat center;
   background-size: cover;
 }
 
