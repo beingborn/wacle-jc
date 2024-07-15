@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
   function changeBackgroundImage() {
-    $('.main__hero').css("background", `url(./img/main__image-${currentIndex}.jpg)`); 
+    $('.main__hero').css("background", `url(img/main__image-${currentIndex}.jpg)`); 
     $('.main__hero').css("background-size", "cover"); 
     currentIndex = (currentIndex + 1) % images.length;
 
@@ -61,7 +61,7 @@ $(document).ready(function(){
       "background-color": "#fff"
     });
     $('.gnb__menu .gnb__item > a').css("color", "#000");
-    $('.logo img').attr('src', "/img/main__logo.png")
+    $('.logo img').attr('src', "img/main__logo.png")
 
     // 높이 애니메이션이 끝난 후 서브메뉴를 보이게 함
     setTimeout(() => {
@@ -80,7 +80,7 @@ $(document).ready(function(){
       "background-color": "transparent"
     });
     $('.gnb__menu .gnb__item > a').css("color", "#fff");
-    $('.logo img').attr('src', "/img/transparent__logo.svg")
+    $('.logo img').attr('src', "img/transparent__logo.svg")
 
 
     $('.sub__menu').css({
